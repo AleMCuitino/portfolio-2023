@@ -1,10 +1,11 @@
+
 [
     {
         "id": 1,
-        "title": "Duck duck ghoose",
-        "subtitle": "Front-End",
+        "title": "Duck or ghoose",
+        "subtitle": "Rueda de la perdición online para el sacrificio de sus participantes",
         "description": "HTML , CSS & JS + Reponsive",
-        "linkRepo": "https://github.com/Behbiz/Portofolio-Behbiz.git",
+        "linkRepo": "https://github.com/AleMCuitino/Duck-or-Goose.git",
         "linkDemo": ""
     },
     

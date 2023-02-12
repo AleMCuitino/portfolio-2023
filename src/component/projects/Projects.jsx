@@ -6,7 +6,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { Button, CardActionArea, CardActions } from '@mui/material';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+import img1 from '../../assets/img-proj/duck-or-goose.png';
 
 const Projects = () => {
     return (
@@ -40,12 +42,11 @@ const Projects = () => {
                             alignItems: "center",
                             justifyContent: "start",
                             fontSize: 18,
-                            fontWeight: 300,
+                            fontWeight: 400,
                             textTransform: 'uppercase',
-                            fontStyle: 'italic',
                         }}
                     >
-                        | Proyectos
+                        Proyectos
                     </Typography>
                 </Box>
 
@@ -63,7 +64,7 @@ const Projects = () => {
                                     <CardMedia
                                         component="img"
                                         height="140"
-                                        image="/static/images/cards/contemplative-reptile.jpg"
+                                        image={img1}
                                         alt="green iguana"
                                     />
                                     <CardContent>
@@ -75,6 +76,9 @@ const Projects = () => {
                                         </Typography>
                                     </CardContent>
                                 </CardActionArea>
+                                <CardActions>
+                                    <AddCircleIcon size="small" color="primary"></AddCircleIcon>
+                                </CardActions>
                             </Card>
                         )
                     })}
