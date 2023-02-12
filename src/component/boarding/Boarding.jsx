@@ -69,14 +69,15 @@ const Boarding = () => {
                             display: { xs: 'flex', md: 'flex' },
                             height: 250,
                             width: 250,
-                            fontSize: 14,
+                            fontSize: 16,
                             fontWeight: 200,
                             textAlign: 'right',
                             textDecoration: 'none',
                             alignItems: { xs: 'flex-start', sm: 'flex-start', md: 'flex-end' }
                         }}
                     >
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        ¡Hola! Soy Alejandra, diseñadora integral y desarrolladora web front-end.
+                        Ahora, este portfolio está en proceso constructivo.
                     </Typography>
                     <ImgBoarding />
                 </Box>
