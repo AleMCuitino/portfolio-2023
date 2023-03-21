@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Works from '../../data/Data.json';
 import Grid from '@mui/material/Grid';
 import { Box } from '@mui/system';
@@ -6,9 +7,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { CardActionArea, CardActions } from '@mui/material';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-import img1 from '../../assets/img-proj/duck-or-goose.png';
 
 const Projects = () => {
     return (
@@ -61,12 +61,14 @@ const Projects = () => {
                                 maxWidth: { xs: 250, sm: 350, md: 550, xl: 850 }
                             }}>
                                 <CardActionArea key={work.id}>
-                                    <CardMedia
+                                    
+                                    <Link to={`/proyecto/${work.id}`}>
+                                        <CardMedia
                                         component="img"
                                         height="140"
-                                        image={img1}
+                                        image={work.imgUrl}
                                         alt="green iguana"
-                                    />
+                                    /></Link>
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="div">
                                             {work.title}
@@ -76,9 +78,6 @@ const Projects = () => {
                                         </Typography>
                                     </CardContent>
                                 </CardActionArea>
-                                <CardActions>
-                                    <AddCircleIcon size="small" color="primary"></AddCircleIcon>
-                                </CardActions>
                             </Card>
                         )
                     })}

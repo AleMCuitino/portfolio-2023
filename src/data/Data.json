@@ -3,26 +3,32 @@
     {
         "id": 1,
         "title": "Duck or ghoose",
+        "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/duck-or-goose.png",
+        "imgAlt": "Lorem ipsum",
         "subtitle": "Rueda de la perdición online para el sacrificio de sus participantes",
         "description": "HTML , CSS & JS + Reponsive",
         "linkRepo": "https://github.com/AleMCuitino/Duck-or-Goose.git",
-        "linkDemo": ""
+        "linkDemo": "https://github.com/AleMCuitino/Duck-or-Goose"
     },
     
     {
         "id": 2,
         "title": "Ranking App",
+        "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/duck-or-goose.png",
+        "imgAlt": "Lorem ipsum",
         "subtitle": "Front-End",
         "description": "HTML , CSS & JS + Reponsive",
-        "linkRepo": "https://github.com/Behbiz/Portofolio-Behbiz.git",
-        "linkDemo": ""
+        "linkRepo": "https://ranking-app-eosin.vercel.app/",
+        "linkDemo": "https://github.com/AleMCuitino/RankingApp"
     },
     {
         "id": 3,
         "title": "RéplicaWeb",
+        "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/duck-or-goose.png",
+        "imgAlt": "Lorem ipsum",
         "subtitle": "Front-End",
         "description": "HTML , CSS & JS + Reponsive",
-        "linkRepo": "https://github.com/Behbiz/Portofolio-Behbiz.git",
-        "linkDemo": ""
+        "linkRepo": " ",
+        "linkDemo": "https://github.com/AleMCuitino/ReplicaWeb"
     }
 ]
