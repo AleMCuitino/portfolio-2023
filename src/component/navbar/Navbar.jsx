@@ -14,7 +14,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { grey } from '@mui/material/colors';
 
-const pages = [{name:'Proyectos', url:'/proyectos'}, {name:'curriculum', url:'/cv'}, {name:'Sobre mi', url:'/sobremi'}]; // cada uno que sea un objeto
+const pages = [{name:'Proyectos', url:'/proyectos'}, {name:'curriculum', url:'/cv/alemcuitino'}, {name:'Sobre mi', url:'/sobremi'}]; // cada uno que sea un objeto
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const color = grey[50];
 
