@@ -1,11 +1,35 @@
 import React, { useState, useEffect } from 'react';
+import './ProjectId.css'
 import { useParams } from 'react-router';
 import { Link } from "react-router-dom";
 import Works from '../../data/Data.json';
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 
+const useParallaxBanner = 
+    setScrollPosition => {
+        const handleScroll = ( ) =>
+            setScrollPosition(window.pageYOffset);
+        
+            useEffect(() => {
+                window
+                .addEventListener(
+                    "scroll",
+                    handleScroll,
+                    { passive: true }
+                );
+            
+                return () =>
+                    window.removeEventListener(
+                        "scroll", handleScroll);
+            }, []);
+    }
 
 const ProjectId = () => {
+    const [scrollPosition, setScrollPosition] = 
+        useState(0)
+
+    useParallaxBanner(setScrollPosition);
+
     const [project, setProject] = useState({});
     const { id } = useParams()
 
@@ -19,31 +43,48 @@ const ProjectId = () => {
     }, [])
 
     return (
-        <React.Fragment>
-            <Card sx={{
-                mb: 5,
-                height: 350,
-                width: 750,
-                maxHeight: { xs: 200, sm: 250, md: 300, xl: 380 },
-                maxWidth: { xs: 250, sm: 350, md: 550, xl: 850 }
-            }}>
-                <CardActionArea key={project?.id}>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={project?.imgUrl}
-                        alt="green iguana"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            {project?.title}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            {project?.subtitle}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
+        <React.Fragment>                
+            <section 
+                className="banner"
+                image={project?.imgUrl}
+                style={{
+                    backgroundImage: `url(${project?.imgUrl})`,
+                    backgroundSize:
+                    `${
+                        (window.outerHeight - scrollPosition) / 3
+                    }%`,
+                }} 
+            >
+            </section>
+            <Grid
+                container
+                spacing={0}
+                direction="column"
+                flexDirection="wrap"
+                sx={{
+                    minHeight: '100vh',
+                }}
+            >            
+                <Typography 
+                    variant="h4" 
+                    component="div"
+                    mt={10} 
+                    ml={15}
+                    style={{
+                        fontWeight:'600',
+                    }}
+                >
+                    {project?.title}
+                </Typography>
+                <Typography 
+                    component="p"
+                    mt={5}
+                    ml={15}
+                    mr={15}
+                >
+                    {project?.description}
+                </Typography>
+            </Grid>
         </React.Fragment>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import Works from '../../data/Data.json';
 import Grid from '@mui/material/Grid';
@@ -7,10 +8,11 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea, CardActions } from '@mui/material';
-import AddCircleIcon from '@mui/icons-material/AddCircle';
+import { Button, CardActionArea, CardActions } from '@mui/material';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
 const Projects = () => {
+
     return (
         <React.Fragment>
             <Grid
@@ -24,6 +26,22 @@ const Projects = () => {
                     minHeight: '100vh',
                 }}
             >
+                
+                <Button variant="text"
+                        sx={{ 
+                            display: "flex",
+                            alignItems: "start",
+                            justifyContent: "start", }}>
+                        <ChevronLeftIcon 
+                            type="button" 
+                            variant="contained" 
+                            color="action" 
+                            sx={{ 
+                                fontSize: 40,
+                                fontWeight: 600,
+                                }}  />
+                </Button>
+
                 <Box sx={{
                     display: "flex",
                     alignItems: "center",
@@ -31,7 +49,7 @@ const Projects = () => {
                     width: 750,
                     maxHeight: { xs: 200, sm: 250, md: 300, xl: 380 },
                     maxWidth: { xs: 250, sm: 350, md: 550, xl: 850 },
-                    mt: 10,
+                    mt: 5,
                     mb: 5
                 }}
                 >
@@ -41,7 +59,7 @@ const Projects = () => {
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "start",
-                            fontSize: 18,
+                            fontSize: 22,
                             fontWeight: 400,
                             textTransform: 'uppercase',
                         }}
@@ -61,7 +79,6 @@ const Projects = () => {
                                 maxWidth: { xs: 250, sm: 350, md: 550, xl: 850 }
                             }}>
                                 <CardActionArea key={work.id}>
-                                    
                                     <Link to={`/proyecto/${work.id}`}>
                                         <CardMedia
                                         component="img"
