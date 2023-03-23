@@ -39,21 +39,22 @@ function ResponsiveAppBar() {
 
     return (
         <AppBar position="static" color="grey" sx={{
-            width: '100%'
+            width: '100%',
+            boxShadow: 'none'
         }}>
             <Container maxWidth="xl">
-                <Toolbar disableGutters>
+                <Toolbar disableGutters sx={{display: 'flex', justifyContent: 'space-between' }}>
                     <Typography
                         variant="h6"
                         noWrap
                         component="a"
                         href="/"
                         sx={{
-                            mr: 1,
+                            ml: 10,
                             display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'cormorant',
+                            fontSize: 28,
                             fontWeight: 700,
-                            color: 'inherit',
+                            color: "#E9417B",
                             textDecoration: 'none',
                         }}
                     >
@@ -67,7 +68,7 @@ function ResponsiveAppBar() {
                             aria-controls="menu-appbar"
                             aria-haspopup="true"
                             onClick={handleOpenNavMenu}
-                            color="inherit"
+                            sx={{ mt: 5, color: "#E9417B", }}
                         >
                             <MenuIcon />
                         </IconButton>
@@ -87,6 +88,7 @@ function ResponsiveAppBar() {
                             onClose={handleCloseNavMenu}
                             sx={{
                                 display: { xs: 'block', md: 'none' },
+                                color: "#E9417B"
                             }}
                         >
                             {pages.map((page) => (
@@ -103,23 +105,26 @@ function ResponsiveAppBar() {
                         component="a"
                         href=""
                         sx={{
-                            mr: 1,
+                            mt: 5,
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
-                            fontFamily: 'carmorant',
                             fontWeight: 700,
-                            color: 'inherit',
                             textDecoration: 'none',
+                            color: "#E9417B"
                         }}
                     >
                         Ale M.Cuitiño
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                    <Box sx={{ ml: 50, flexGrow: 1, display: { xs: 'none', md: 'flex'}, justifyContent: 'space-around' }}>
                         {pages.map((page) => (
                             <Button
                                 key={page.name}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 1, color: 'black', display: 'block' }}
+                                sx={{ 
+                                    mt: 3, 
+                                    color: "#E9417B",
+                                    fontSize:18, 
+                                    display: 'block' }}
                                 component={Link} 
                                 to= {page.url}
                             >
