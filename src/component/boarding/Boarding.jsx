@@ -15,9 +15,9 @@ const Boarding = () => {
                 alignItems="center"
                 justifyContent="center"
                 style={{
-                    minHeight: '100vh',
+                    maxHeight: '100vh',
                 }}>
-                <div style={{ width: '50%', mt: { xs: 2, sm: 2.5, md: 3, lg: 3.5, xl: 4 }, display: 'flex', flexDirection: 'row-reverse', justifyContent: 'end' }}>
+                {/* <div style={{ width: '50%', mt: { xs: 2, sm: 2.5, md: 3, lg: 3.5, xl: 4 }, display: 'flex', flexDirection: 'row-reverse', justifyContent: 'end' }}>
                     <Typography
                         variant="p"
                         sx={{
@@ -31,55 +31,60 @@ const Boarding = () => {
                     >
                         Diseño y Desarrollo Web Front-end
                     </Typography>
-                </div>
+                </div> */}
                 <Box
                     sx={{
                         width: '50%',
                         display: 'flex',
-                        justifyContent: 'end'
+                        alignItems: 'center',
+                        justifyContent: 'start'
                     }}>
                     <Typography
                         variant="h1"
                         sx={{
-                            mb: 2,
                             display: { xs: 'flex', md: 'flex' },
-                            justifyItems: 'start',
-                            fontSize: 52,
-                            fontWeight: 200,
+                            justifyItems: 'center',
+                            alignItems: 'center',
+                            fontSize: 150,
+                            fontWeight: 700,
                             textDecoration: 'none',
+                            color: "#E9417B"
                         }}
                     >
-                        Portfolio
+                        portfolio
                     </Typography>
                 </Box>
                 <Box sx={{
                     width: '50%',
-                    ml: { xs: 2, sm: 2, md: 2 },
+                    // ml: { xs: 2, sm: 2, md: 2 },
                     display: 'flex',
-                    flexDirection: { xs: 'column-reverse', sm: 'column-reverse', md: 'row', lg: 'row', xl: 'row' },
-                    justifyContent: 'end',
-                    alignItems: 'flex-end'
+                    // flexDirection: { xs: 'column-reverse', sm: 'column-reverse', md: 'row', lg: 'row', xl: 'row' },
+                    alignItems: 'center',
+                    justifyContent: 'start',
+                    // alignItems: 'flex-end'
                 }}>
 
                     <Typography
                         variant="p"
                         sx={{
-                            mt: { xs: 2, sm: 2, md: 0, lg: 0, xl: 0 },
-                            mr: { xs: 0, sm: 0, md: 2, lg: 2, xl: 3 },
+                            mt: { xs: 2, sm: 3, md: 5, lg: 5, xl: 10 },
+                            // mr: { xs: 0, sm: 0, md: 2, lg: 2, xl: 3 },
                             display: { xs: 'flex', md: 'flex' },
-                            height: 250,
+                            height: 'auto',
+                            color: "#E9417B",
                             width: 250,
                             fontSize: 16,
-                            fontWeight: 200,
-                            textAlign: 'right',
+                            fontWeight: { xs: 10, sm: 200 },
+                            // textAlign: 'right',
                             textDecoration: 'none',
-                            alignItems: { xs: 'flex-start', sm: 'flex-start', md: 'flex-end' }
+                            justifyItems: 'center',
+                            alignItems: { xs: 'flex-start', sm: 'flex-start', md: 'center' }
                         }}
                     >
                         ¡Hola! Soy Alejandra, desarrolladora web junior frontend y diseñadora integral.
                         Por ahora, este portfolio está en proceso constructivo.
                     </Typography>
-                    <ImgBoarding />
+                    {/* <ImgBoarding /> */}
                 </Box>
             </Grid>
         </React.Fragment >
