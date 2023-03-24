@@ -24,6 +24,7 @@ const Boarding = () => {
                         display: { xs: 'flex', md: 'flex' },
                         justifyItems: 'center',
                         alignItems: 'center',
+                        fontFamily: 'Kanit, sans-serif',
                         fontSize: 150,
                         fontWeight: 700,
                         textDecoration: 'none',
