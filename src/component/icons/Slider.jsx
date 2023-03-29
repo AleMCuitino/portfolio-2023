@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 
 const Slider = () => {
     return (
-        <Container sx={{  }}>
+        <Container sx={{ mb: 5, position: 'relative' }}>
             <Swiper
                 observer={true}
                 observeParents={true}
