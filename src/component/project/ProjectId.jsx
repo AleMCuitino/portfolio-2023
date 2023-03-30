@@ -5,27 +5,27 @@ import { Link } from "react-router-dom";
 import Works from '../../data/Data.json';
 import { Grid, Typography } from '@mui/material';
 
-const useParallaxBanner = 
+const useParallaxBanner =
     setScrollPosition => {
-        const handleScroll = ( ) =>
+        const handleScroll = () =>
             setScrollPosition(window.pageYOffset);
-        
-            useEffect(() => {
-                window
+
+        useEffect(() => {
+            window
                 .addEventListener(
                     "scroll",
                     handleScroll,
                     { passive: true }
                 );
-            
-                return () =>
-                    window.removeEventListener(
-                        "scroll", handleScroll);
-            }, []);
+
+            return () =>
+                window.removeEventListener(
+                    "scroll", handleScroll);
+        }, []);
     }
 
 const ProjectId = () => {
-    const [scrollPosition, setScrollPosition] = 
+    const [scrollPosition, setScrollPosition] =
         useState(0)
 
     useParallaxBanner(setScrollPosition);
@@ -43,40 +43,38 @@ const ProjectId = () => {
     }, [])
 
     return (
-        <React.Fragment>                
-            <section 
-                className="banner"
-                image={project?.imgUrl}
-                style={{
-                    backgroundImage: `url(${project?.imgUrl})`,
-                    backgroundSize:
-                    `${
-                        (window.outerHeight - scrollPosition) / 3
-                    }%`,
-                }} 
-            >
-            </section>
+        <React.Fragment>
             <Grid
                 container
                 spacing={0}
                 direction="column"
-                flexDirection="wrap"
                 sx={{
                     minHeight: '100vh',
                 }}
-            >            
-                <Typography 
-                    variant="h4" 
+            >
+                <section
+                    className="banner"
+                    image={project?.imgUrl}
+                    style={{
+                        backgroundImage: `url(${project?.imgUrl})`,
+                        backgroundSize:
+                            `${(window.outerHeight - scrollPosition) / 3
+                            }%`,
+                    }}
+                >
+                </section>
+                <Typography
+                    variant="h4"
                     component="div"
-                    mt={10} 
+                    mt={10}
                     ml={15}
                     style={{
-                        fontWeight:'600',
+                        fontWeight: '600',
                     }}
                 >
                     {project?.title}
                 </Typography>
-                <Typography 
+                <Typography
                     component="p"
                     mt={5}
                     ml={15}
