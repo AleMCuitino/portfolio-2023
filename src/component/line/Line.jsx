@@ -39,7 +39,7 @@ const Line = () => {
             <Box 
                 sx={{   
                     height: '100vh',
-                    width: '30vw',
+                    width: '100vw',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',

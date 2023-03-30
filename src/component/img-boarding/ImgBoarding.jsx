@@ -13,6 +13,7 @@ function ImgBoarding() {
             <Box
                         component="img"
                         sx={{
+                            ml: '12vw',
                             height: 450,
                             width: 450,
                             maxHeight: { xs: 150, sm: 180, md: 450, xl:650 },
