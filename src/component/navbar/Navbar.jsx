@@ -8,13 +8,11 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { grey } from '@mui/material/colors';
 
-const pages = [{name:'Proyectos', url:'/proyectos'}, {name:'curriculum', url:'/cv'}, {name:'Sobre mi', url:'/sobremi'}]; // cada uno que sea un objeto
+const pages = [{name:'Proyectos', url:'/proyectos'}, {name:'curriculum', url:'/cv/alemcuitino'}, {name:'Sobre mi', url:'/sobremi'}]; // cada uno que sea un objeto
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const color = grey[50];
 
@@ -39,21 +37,23 @@ function ResponsiveAppBar() {
 
     return (
         <AppBar position="static" color="grey" sx={{
-            width: '100%'
+            width: '100%',
+            boxShadow: 'none'
         }}>
             <Container maxWidth="xl">
-                <Toolbar disableGutters>
+                <Toolbar disableGutters sx={{display: 'flex', justifyContent: 'space-between' }}>
                     <Typography
                         variant="h6"
                         noWrap
                         component="a"
                         href="/"
                         sx={{
-                            mr: 1,
+                            mx: 8,
+                            ml: 20,
                             display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'cormorant',
+                            fontSize: 28,
                             fontWeight: 700,
-                            color: 'inherit',
+                            color: "#E9417B",
                             textDecoration: 'none',
                         }}
                     >
@@ -67,7 +67,7 @@ function ResponsiveAppBar() {
                             aria-controls="menu-appbar"
                             aria-haspopup="true"
                             onClick={handleOpenNavMenu}
-                            color="inherit"
+                            sx={{ mt: 5, color: "#E9417B", }}
                         >
                             <MenuIcon />
                         </IconButton>
@@ -87,6 +87,7 @@ function ResponsiveAppBar() {
                             onClose={handleCloseNavMenu}
                             sx={{
                                 display: { xs: 'block', md: 'none' },
+                                color: "#E9417B"
                             }}
                         >
                             {pages.map((page) => (
@@ -103,23 +104,27 @@ function ResponsiveAppBar() {
                         component="a"
                         href=""
                         sx={{
-                            mr: 1,
+                            mt: 5,
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
-                            fontFamily: 'carmorant',
                             fontWeight: 700,
-                            color: 'inherit',
                             textDecoration: 'none',
+                            color: "#E9417B"
                         }}
                     >
                         Ale M.Cuitiño
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                    <Box sx={{ ml: 30, mr: 10, flexGrow: 1, display: { xs: 'none', md: 'flex'}, justifyContent: 'space-around' }}>
                         {pages.map((page) => (
                             <Button
                                 key={page.name}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 1, color: 'black', display: 'block' }}
+                                sx={{ 
+                                    mx: 5,
+                                    mr: 5, 
+                                    color: "#E9417B",
+                                    fontSize:18, 
+                                    display: 'block' }}
                                 component={Link} 
                                 to= {page.url}
                             >
