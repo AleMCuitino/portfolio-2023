@@ -18,6 +18,8 @@ function ImgBoarding() {
                             maxHeight: { xs: 150, sm: 180, md: 250, xl:450 },
                             maxWidth: { xs: 150, sm: 180, md: 250, xl:450 },
                             display: { xs: 'flex', md: 'flex' },
+                            justifyContent: 'flex-end',
+                            alignItems: 'flex-end'
                         }}
                         alt="Alejandra Morales Cuitiño."
                         src={over ? aleHover : ale}
