@@ -34,7 +34,7 @@ const Projects = () => {
                   justifyContent: 'space-evenly',
                   alignItems: 'center',
                   top: '100vh',
-                  width: '100%',
+                  width: '80%',
                   minHeight: '100vh',
                   maxHeight: '100vh',
                   backgroundColor: '#F7C4D3',
@@ -42,12 +42,17 @@ const Projects = () => {
                   // maxHeight: { xs: 200, sm: 250, md: 350, xl: 400 },
                   // maxWidth: { xs: 300, sm: 450, md: 750, xl: 1050 }
                 }}>
-                <Box>
+                <Box sx={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  width: '40%',
+                  // maxHeight: { xs: 200, sm: 250, md: 350, xl: 400 },
+                  // maxWidth: { xs: 300, sm: 450, md: 750, xl: 1050 }
+                }}>
                   <Typography
                     variant="h4"
                     component="div"
                     sx={{
-                      width: '60%',
                       fontSize: 40,
                       fontWeight: 600,
                       textTransform: 'uppercase',
