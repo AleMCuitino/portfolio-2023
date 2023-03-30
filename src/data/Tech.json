@@ -1,9 +1,58 @@
 [
     {
         "id": 1,
-        "title": "html",
-        "icon":"",
-        "imgAlt": "Lorem ipsum",
-        "link": "https://github.com/AleMCuitino/Duck-or-Goose.git"
+        "title":"html",
+        "icon":"https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech/Html.svg",
+        "imgAlt":"Html5 icon logotype",
+        "link":"https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+    },
+    {
+        "id": 2,
+        "title":"css",
+        "icon":"https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech/Css.svg",
+        "imgAlt":"Css3 icon logotype",
+        "link":"https://developer.mozilla.org/es/docs/Web/CSS"
+    },
+    {
+        "id": 3,
+        "title":"javascript",
+        "icon":"https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech/Js.svg",
+        "imgAlt":"Javascript icon logotype",
+        "link":"https://developer.mozilla.org/es/docs/Web/JavaScript"
+    },
+    {
+        "id": 4,
+        "title":"reactjs",
+        "icon":"https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech/Reactjs.svg",
+        "imgAlt":"ReactJs icon logotype",
+        "link":"https://es.reactjs.org/"
+    },
+    {
+        "id": 5,
+        "title":"bootstrap",
+        "icon":"https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech/Bootstrap.svg",
+        "imgAlt":"Bootstrap icon logotype",
+        "link":"https://getbootstrap.com/"
+    },
+    {
+        "id": 6,
+        "title":"sass",
+        "icon":"https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech/Sass.svg",
+        "imgAlt":"Bootstrap icon logotype",
+        "link":"https://sass-lang.com/"
+    },
+    {
+        "id": 7,
+        "title":"styled-component",
+        "icon":"https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech/Styled-component.svg",
+        "imgAlt":"Styled-component icon logotype",
+        "link":"https://styled-components.com/"
+    },
+    {
+        "id": 8,
+        "title":"material ui",
+        "icon":"https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech/Material-ui.svg",
+        "imgAlt":"Material UI icon logotype",
+        "link":"https://mui.com/"
     }
 ]
