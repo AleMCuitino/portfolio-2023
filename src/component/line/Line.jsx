@@ -9,7 +9,7 @@ import { Paper, Typography } from '@mui/material';
 const Line = () => {
     const timeline = gsap.timeline({
         repeat: true,
-        defaults: { duration: 1, ease: "easeInOut"}
+        defaults: { duration: 0.1, ease: "easeInOut"}
     })
 
     const e1Ref = useRef()
@@ -39,19 +39,20 @@ const Line = () => {
             <Box 
                 sx={{   
                     height: '100vh',
-                    width: '60vw',
+                    width: '30vw',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
+                    alignContent: 'flex-start'
                 }}
                 >
                 <Box 
                     sx={{   
                         display: 'flex',
+                        flexDirection: 'column',
                         justifyContent: 'space-between',
                         alignItems: 'center',
-                        padding: '2rem',
-                        width: '95%',
+                        width: '100%',
                     }}
                     >
                     {Data.map(el=> {
@@ -61,6 +62,7 @@ const Line = () => {
                                 key={el.id} 
                                 ref={el.ref}
                                 sx={{
+                                    padding: '2rem 0 1rem 0',
                                     color: '#E9417B'
                                 }}
                                 >

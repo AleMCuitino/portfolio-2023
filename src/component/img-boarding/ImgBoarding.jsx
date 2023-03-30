@@ -13,13 +13,11 @@ function ImgBoarding() {
             <Box
                         component="img"
                         sx={{
-                            height: 350,
-                            width: 350,
-                            maxHeight: { xs: 150, sm: 180, md: 250, xl:450 },
-                            maxWidth: { xs: 150, sm: 180, md: 250, xl:450 },
+                            height: 450,
+                            width: 450,
+                            maxHeight: { xs: 150, sm: 180, md: 450, xl:650 },
+                            maxWidth: { xs: 150, sm: 180, md: 450, xl:650 },
                             display: { xs: 'flex', md: 'flex' },
-                            justifyContent: 'flex-end',
-                            alignItems: 'flex-end'
                         }}
                         alt="Alejandra Morales Cuitiño."
                         src={over ? aleHover : ale}

@@ -14,7 +14,7 @@ const Boarding = () => {
             alignItems: 'center',
         }}>
             <Box sx={{
-                mr: 10,
+                mr: '10vw',
                 display: 'flex',
                 flexDirection: 'column'
             }}>

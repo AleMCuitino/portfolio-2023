@@ -48,7 +48,8 @@ function ResponsiveAppBar() {
                         component="a"
                         href="/"
                         sx={{
-                            ml: 10,
+                            mx: 8,
+                            ml: 20,
                             display: { xs: 'none', md: 'flex' },
                             fontSize: 28,
                             fontWeight: 700,
@@ -113,13 +114,14 @@ function ResponsiveAppBar() {
                     >
                         Ale M.Cuitiño
                     </Typography>
-                    <Box sx={{ ml: 50, flexGrow: 1, display: { xs: 'none', md: 'flex'}, justifyContent: 'space-around' }}>
+                    <Box sx={{ ml: 30, mr: 10, flexGrow: 1, display: { xs: 'none', md: 'flex'}, justifyContent: 'space-around' }}>
                         {pages.map((page) => (
                             <Button
                                 key={page.name}
                                 onClick={handleCloseNavMenu}
                                 sx={{ 
-                                    mt: 3, 
+                                    mx: 5,
+                                    mr: 5, 
                                     color: "#E9417B",
                                     fontSize:18, 
                                     display: 'block' }}
