@@ -5,6 +5,7 @@ import { Box } from '@mui/system';
 import Line from '../component/line/Line';
 import { Typography } from '@mui/material';
 import { Mail, GitHub, LinkedIn } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 const AboutMe = () => {
     return (
@@ -53,17 +54,27 @@ const AboutMe = () => {
                     display: 'flex',
                     alignContent: 'center',
                     justifyContent: 'space-between',
-                    color: "#E9417B",
-                    fontSize: { xs: 50, sm: 50, md: 50 },
                     }}
                     >
-                <GitHub sx={{
-                    fontSize: { xs: 50, sm: 50, md: 50 },
-                }} />
-                <LinkedIn sx={{
-                    fontSize: { xs: 50, sm: 50, md: 50 },
-                }}/>
+                <Link 
+                    to='https://github.com/AleMCuitino/portfolio-2023'
+                    >     
+                    <GitHub sx={{
+                        color: "#E9417B",
+                        fontSize: { xs: 50, sm: 50, md: 50 },
+                    }} />
+                </Link>   
+                <Link 
+                    to='https://github.com/AleMCuitino/portfolio-2023'
+                    >
+                    <LinkedIn
+                        sx={{
+                        color: "#E9417B",
+                        fontSize: { xs: 50, sm: 50, md: 50 },
+                        }}/>
+                </Link>
                 <Mail sx={{
+                    color: "#E9417B",
                     fontSize: { xs: 50, sm: 50, md: 50 },
                 }} />
             </Box>  
