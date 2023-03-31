@@ -50,6 +50,7 @@ const ProjectId = () => {
                 direction="column"
                 sx={{
                     minHeight: '100vh',
+                    color: '#E9417B',
                 }}
             >
                 <section
