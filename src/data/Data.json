@@ -1,37 +1,53 @@
-
 [
-    {
-        "id": 1,
-        "title": "Duck or ghoose",
-        "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/duck-or-goose.png",
-        "imgAlt": "Lorem ipsum",
-        "subtitle": "Rueda de la perdición online para el sacrificio de sus participantes",
-        "description":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas Letraset, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
-        "technologies": "HTML , CSS & JS + Reponsive",
-        "linkRepo": "https://github.com/AleMCuitino/Duck-or-Goose.git",
-        "linkDemo": "https://github.com/AleMCuitino/Duck-or-Goose"
-    },
-    
-    {
-        "id": 2,
-        "title": "Ranking App",
-        "imgUrl": "",
-        "imgAlt": "Lorem ipsum",
-        "subtitle": "Front-End",
-        "description":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas Letraset, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
-        "technologies": "HTML , CSS & JS + Reponsive",
-        "linkRepo": "https://ranking-app-eosin.vercel.app/",
-        "linkDemo": "https://github.com/AleMCuitino/RankingApp"
-    },
-    {
-        "id": 3,
-        "title": "RéplicaWeb",
-        "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/duck-or-goose.png",
-        "imgAlt": "Lorem ipsum",
-        "subtitle": "Front-End",
-        "description":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas Letraset, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
-        "technologies": "HTML , CSS & JS + Reponsive",
-        "linkRepo": " ",
-        "linkDemo": "https://github.com/AleMCuitino/ReplicaWeb"
-    }
+    [
+        {
+            "id": 1,
+            "title": "Duck or goose",
+            "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/duck-or-goose.png",
+            "imgAlt": "",
+            "coverImg": "",
+            "subtitle": "Pato o Ganso es una rueda de la perdición para el sacrificio de sus participantes, la aplicación web utiliza un método aleatorio para escoger al participante a sacrificar",
+            "description": "Pato o Ganso es una aplicación web para sacrificar a programadores (jugadores), al que se aplica un sistema aleatorio para elegir entre ellos el jugador a sacrificar. La aplicación cuenta con una función principal que consiste en seleccionar de manera aleatoria un participante para que sea eliminado del juego hasta que no quede ninguno más para sacrificar. Además, es posible agregar nuevos participantes para que sean parte en el juego, con la posibilidad de eliminar a los que ya están en la lista. La tecnología utilizada en Duck or Goose incluye varios proyectos de código abierto, como Sass, Bootstrap, node.js, jQuery y owlCarousel. También se utilizó las Media Queries simplificada por Sass, Fog Animation y Animista Animations como recursos de apoyo utilizados para desarrollar la aplicación.",
+            "technologies": "HTML , SASS & JS",
+            "icon1": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/html-color.svg",
+            "Icon2": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/sass-color.svg",
+            "Icon3": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/js-color.svg",
+            "linkRepo": "https://github.com/AleMCuitino/Duck-or-Goose",
+            "linkDemo": "https://duck-or-goose.vercel.app/"
+        },
+        {
+            "id": 2,
+            "title": "Rank App",
+            "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/RankingApp/main/src/assets/images/screenshot01.png",
+            "imgAlt": "",
+            "coverImg": "",
+            "coverImgAlt": "",
+            "subtitle": "Aplicación web para la calificación de aplicaciones existentes, rankeadas de mejores a peores. Listado de aplicaciones con opción de filtrado según interés con vista detallada de cada aplicación  ",
+            "Description":"Rank App es una plataforma que permite a los usuarios encontrar, calificar y revisar todas las aplicaciones disponibles en el mercado (para este proyecto en un archivo json). Ofrece una interfaz para que los usuarios puedan navegar por diferentes secciones, como las mejores aplicaciones y las peores aplicaciones. Cada aplicación cuenta con una descripción detallada, incluyendo su nombre, imagen, descripción, tipo de aplicación, puntuación en estrellas, opciones para calificar con estrellas, botón de like o dislike, contador de likes o dislikes, opiniones y una caja de comentarios para dejar opiniones. La aplicación web también cuenta con un buscador de palabras clave y un filtro que permite a los usuarios clasificar las aplicaciones por diferentes opciones, como por ranking, las 10 mejores, las 10 peores, móviles, web y de escritorio. El proyecto fue desarrollado utilizando tecnologías como HTML5, NodeJs, ReactJs, react-router DOM, react icons, Styled-components, Npm y Material UI para proporcionar una experiencia de usuario agradable y fluida.",
+            "technologies": "Styled-Component, MUI, RactJS",
+            "icon1": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/html-color.svg",
+            "icon2": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/styled-component-color.svg",
+            "icon3": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/mui-color.svg",
+            "icon4": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/react-color.svg",
+            "linkRepo": "https://ranking-app-eosin.vercel.app/",
+            "linkDemo": "https://github.com/AleMCuitino/RankingApp"
+        },
+        {
+            "id": 3,
+            "title": "Réplica Web",
+            "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/sound-wave.png",
+            "imgAlt": "",
+            "coverImg": "",
+            "coverImgAlt": "",
+            "subtitle": "Maquetación web de SoundWave, creación de la estructura visual de la página, desarrollada en ReactJs, lo que permite una mayor flexibilidad y escalabilidad en la construcción de la interfaz de usuario. Con ejecución de vistas responsive para 4 dispositivos diferentes.",
+            "description": "Maquetación web de SoundWave, desarrollada en React, para otorgarle mayor flexibilidad y escalabilidad a la construcción de la interfaz de usuario. La web es responsive para cuatro dispositivos diferentes, se ajusta al tamaño y tipo de pantalla en móvil, tablet, escritorio y pantalla xl, así proporcionar una experiencia de usuario consistente en cualquier dispositivo. Los estilos de la web se desarrollaron utilizando CSS y Bootstrap, lo que permite un diseño limpio y optimizado de la interfaz de usuario. Se utilizó react-router-dom para definir las rutas de la barra de navegación y mejorar la usabilidad y transiciones por la página. Finalmente, la réplica se desarrolló bajo el concepto de Atomic Design, a través de componentes independientes que se puedam reutilizar y combinar de diferentes maneras para crear una experiencia de usuario consistente y escalable.",
+            "technologies": "HTML , CSS , Bootstrap & ReactJS ",
+            "icon1": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/html-color.svg",
+            "icon2": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/css-color.svg",
+            "icon3": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/bootstrap-color.svg",
+            "icon4": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/react-color.svg",
+            "linkRepo": "https://github.com/AleMCuitino/ReplicaWeb ",
+            "linkDemo": "https://replica-web-ten.vercel.app/"
+        }
+    ]
 ]
