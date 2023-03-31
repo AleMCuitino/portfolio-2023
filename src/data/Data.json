@@ -2,14 +2,21 @@
 [
     {
         "id": 1,
-        "title": "Duck or ghoose",
+        "title": "Duck or goose",
         "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/duck-or-goose.png",
-        "imgAlt": "Lorem ipsum",
-        "subtitle": "Rueda de la perdición online para el sacrificio de sus participantes",
-        "description":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas Letraset, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
-        "technologies": "HTML , CSS & JS + Reponsive",
-        "linkRepo": "https://github.com/AleMCuitino/Duck-or-Goose.git",
-        "linkDemo": "https://github.com/AleMCuitino/Duck-or-Goose"
+        "imgAlt": "",
+        "coverImg": "",
+        "subtitle": "Pato o Ganso es un juego al estilo rueda de la perdición (wheel of doom) para el sacrificio de sus participantes, la aplicación web utiliza un método aleatorio para escoger al participante a sacrificar.",
+        "description":"Pato o Ganso es una aplicación web para sacrificar a programadores (jugadores), al que se aplica un sistema aleatorio para elegir entre ellos el jugador a sacrificar. La aplicación cuenta con una función principal que consiste en seleccionar de manera aleatoria un participante para que sea eliminado del juego hasta que no quede ninguno más para sacrificar. Además, es posible agregar nuevos participantes para que sean parte en el juego, con la posibilidad de eliminar a los que ya están en la lista. La tecnología utilizada en Duck or Goose incluye varios proyectos de código abierto, como Sass, Bootstrap, node.js, jQuery y owlCarousel. También se utilizó las Media Queries simplificada por Sass, Fog Animation y Animista Animations como recursos de apoyo utilizados para desarrollar la aplicación.",
+        "technologies": "HTML , SASS & JS",
+        "icon1": "",
+        "icon2": "",
+        "icon3": "",
+        "icon4": "",
+        "icon5": "",
+        "icon6": "",
+        "linkRepo": "https://github.com/AleMCuitino/Duck-or-Goose",
+        "linkDemo": "https://duck-or-goose.vercel.app/"
     },
     
     {
@@ -18,7 +25,7 @@
         "imgUrl": "",
         "imgAlt": "Lorem ipsum",
         "subtitle": "Front-End",
-        "description":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas Letraset, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+        "description":"",
         "technologies": "HTML , CSS & JS + Reponsive",
         "linkRepo": "https://ranking-app-eosin.vercel.app/",
         "linkDemo": "https://github.com/AleMCuitino/RankingApp"
@@ -29,7 +36,7 @@
         "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/duck-or-goose.png",
         "imgAlt": "Lorem ipsum",
         "subtitle": "Front-End",
-        "description":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas Letraset, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+        "description":"",
         "technologies": "HTML , CSS & JS + Reponsive",
         "linkRepo": " ",
         "linkDemo": "https://github.com/AleMCuitino/ReplicaWeb"

@@ -15,3 +15,9 @@ code {
 .react-pdf__Page__annotations {
   display: none;
 }
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+  width: 70vw !important;
+  height: 100% !important;
+}

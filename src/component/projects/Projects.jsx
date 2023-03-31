@@ -53,7 +53,8 @@ const Projects = () => {
                     variant="h4"
                     component="div"
                     sx={{
-                      fontSize: 40,
+                      mb: 5,
+                      fontSize: 32,
                       fontWeight: 600,
                       textTransform: 'uppercase',
                       textAlign: 'right',
@@ -65,7 +66,7 @@ const Projects = () => {
                     underline="none"
                     variant="p"
                     sx={{
-                      fontSize: 24,
+                      fontSize: 20,
                       fontWeight: 300,
                       textAlign: 'right',
                     }}>

@@ -25,7 +25,19 @@ function ViewerCv() {
             display: 'flex',
             justifyContent: 'center',
           }}>
-        <Button variant="contained">Descargar</Button>
+        <Button 
+          variant="contained" 
+          href={resume} 
+          download='MoralesCuitiño, Alejandra-cv'
+          sx={{
+            backgroundColor: '#E9417B',
+            borderRadius: '25px',
+            height: '3rem',
+            width: '9rem',
+            fontSize: '1em'
+          }}> 
+          Descargar
+          </Button>
       </Box>
     </React.Fragment>   
   )
