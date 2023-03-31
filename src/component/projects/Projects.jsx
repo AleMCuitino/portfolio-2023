@@ -14,7 +14,6 @@ const Projects = () => {
     <React.Fragment>
       <Box sx={{
         width: '100%',
-        height: '100vh',
         backgroundColor: '#F7C4D3',
         display: 'flex',
         flexDirection: 'column',
@@ -33,11 +32,10 @@ const Projects = () => {
                   display: 'flex',
                   justifyContent: 'space-evenly',
                   alignItems: 'center',
-                  top: '100vh',
                   width: '80%',
                   minHeight: '100vh',
                   maxHeight: '100vh',
-                  backgroundColor: '#F7C4D3',
+                  backgroundColor: 'transparent',
                   color: '#E9417B',
                   // maxHeight: { xs: 200, sm: 250, md: 350, xl: 400 },
                   // maxWidth: { xs: 300, sm: 450, md: 750, xl: 1050 }
