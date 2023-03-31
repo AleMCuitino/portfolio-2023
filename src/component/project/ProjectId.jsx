@@ -4,6 +4,7 @@ import { useParams } from 'react-router';
 import { Link } from "react-router-dom";
 import Works from '../../data/Data.json';
 import { Grid, Typography } from '@mui/material';
+import { Box } from '@mui/system';
 
 const useParallaxBanner =
     setScrollPosition => {
@@ -64,25 +65,28 @@ const ProjectId = () => {
                     }}
                 >
                 </section>
-                <Typography
-                    variant="h4"
-                    component="div"
-                    mt={10}
-                    ml={15}
-                    style={{
-                        fontWeight: '600',
-                    }}
-                >
-                    {project?.title}
-                </Typography>
-                <Typography
-                    component="p"
-                    mt={5}
-                    ml={15}
-                    mr={15}
-                >
-                    {project?.description}
-                </Typography>
+                <Box 
+                    mx={20}
+                    >
+                    <Typography
+                        variant='h3'
+                        mt={20}
+                        sx={{
+                            fontWeight: '600',
+                        }}
+                    >
+                        {project?.title}
+                    </Typography>
+                    <Typography
+                        variant='p'
+                        sx={{
+                            fontWeight: '300',
+                            fontSize: '1.25em',
+                        }}
+                    > 
+                        {project?.description}
+                    </Typography>
+                </Box>
             </Grid>
         </React.Fragment>
     )
