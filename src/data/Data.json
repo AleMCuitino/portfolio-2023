@@ -9,10 +9,12 @@
         "subtitle": "Pato o Ganso es una rueda de la perdición para el sacrificio de sus participantes, la aplicación web utiliza un método aleatorio para escoger al participante a sacrificar.",
         "description": "Pato o Ganso es una aplicación web para sacrificar a programadores (jugadores), al que se aplica un sistema aleatorio para elegir entre ellos el jugador a sacrificar. La aplicación cuenta con una función principal que consiste en seleccionar de manera aleatoria un participante para que sea eliminado del juego hasta que no quede ninguno más para sacrificar.",
         "description2": "Además, es posible agregar nuevos participantes para que sean parte en el juego, con la posibilidad de eliminar a los que ya están en la lista. La tecnología utilizada en Duck or Goose incluye varios proyectos de código abierto, como Sass, Bootstrap, node.js, jQuery y owlCarousel. También se utilizó las Media Queries simplificada por Sass, Fog Animation y Animista Animations como recursos de apoyo utilizados para desarrollar la aplicación.",
-        "technologies": "HTML , SASS & JS",
-        "icon1": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/html-color.svg",
-        "icon2": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/sass-color.svg",
-        "icon3": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/js-color.svg",
+        "tech":
+            [
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/html-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/sass-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/js-color.svg"
+            ],
         "linkRepo": "https://github.com/AleMCuitino/Duck-or-Goose",
         "linkDemo": "https://duck-or-goose.vercel.app/"
     },
@@ -26,17 +28,19 @@
         "subtitle": "Juego de escape virtual, diseñado y desarrollado para Factoría F5 con el objetivo de evaluar las competencias de los candidatos durante su proceso de selección a nuevas promociones de estudiantes a sus cursos.",
         "description": "Es una aplicación web desarrollada como escape room virtual con el fin de utilizarse en procesos de selección de futuras promociones de los cursos dictados por Factoría F5. Los aspirantes tendrán que resolver diferentes pruebas de lógica a medida transcurre el tiempo limitado a 60 minutos. La aplicación cuenta con roles de usuario, tales como superadmin, administrador y aspirante. A medida que los aspirantes resuelven las pruebas de lógica, van avanzando progresivamente a las siguientes secciones. Si un aspirante no logra resolver algún ejercicio en determinado el juego cuenta con tips para ayudarlo. Cada juego de la prueba de lógica es interactivo, lo que hace que la experiencia del escape room sea más amena. Por lo que se diseñó con ventanas modales y animaciones, lo que proporciona una experiencia de usuario atractiva.",
         "description2": "Por otra parte, el administrador de la aplicación tiene la capacidad de crear, leer, actualizar y eliminar usuarios aspirantes mediante un CRUD de usuarios, agregarlos a grupos dentro de un escape room y la creación de una sesión del juego. La aplicación web se desarrolló con el framework Laravel para la parte del back-end y React para el front-end. Además, se utilizó una base de datos relacional con MySql, también se implementó Styled Components y Json Web Token.",
-        "technologies": "Bootstrap, Styled-Components, Sweetalert, Framer Motion, ReactJs, Vite, Pusher-Js, PHP, Laravel",
+        "tech":
+            [
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/bootstrap-color.svg ",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/styled-component-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/sweet-alert-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/frame-motion-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/react-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/vite-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/laravel-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/jest-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/babel-color.svg"
+            ],
         "test": "Jest, Babel",
-        "icon1": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/bootstrap-color.svg ",
-        "icon2": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/styled-component-color.svg",
-        "icon3": "https://raw.githubusercontent.com/t4t5/sweetalert/e3c2085473a0eb5a6b022e43eb22e746380bb955/assets/logotype.png",
-        "icon4": "https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png",
-        "icon5": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/react-color.svg",
-        "icon6": "https://vitejs.dev/logo-with-shadow.png",
-        "icon7": "https://avatars.githubusercontent.com/u/739550?s=280&v=4",
-        "icon8": "https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png",
-        "icon9": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Babel_Logo.svg/1280px-Babel_Logo.svg.png",
         "linkRepo": "https://github.com/AleMCuitino/escape-room-frontend",
         "linkRepoBack": "https://github.com/fcegatti/escape-room-backend",
         "linkDemo": "no disponible"
@@ -51,11 +55,13 @@
         "subtitle": "Aplicación web para la calificación de aplicaciones existentes, rankeadas de mejores a peores. Listado de aplicaciones con opción de filtrado según interés con vista detallada de cada aplicación.",
         "description":"Rank App es una plataforma que permite a los usuarios encontrar, calificar y revisar todas las aplicaciones disponibles en el mercado (para este proyecto en un archivo json). Ofrece una interfaz para que los usuarios puedan navegar por diferentes secciones, como las mejores aplicaciones y las peores aplicaciones. Cada aplicación cuenta con una descripción detallada, incluyendo su nombre, imagen, descripción, tipo de aplicación, puntuación en estrellas, opciones para calificar con estrellas, botón de like o dislike, contador de likes o dislikes, opiniones y una caja de comentarios para dejar opiniones.",
         "description2": "La aplicación web también cuenta con un buscador de palabras clave y un filtro que permite a los usuarios clasificar las aplicaciones por diferentes opciones, como por ranking, las 10 mejores, las 10 peores, móviles, web y de escritorio. El proyecto fue desarrollado utilizando tecnologías como HTML5, NodeJs, ReactJs, react-router DOM, react icons, Styled-components, Npm y Material UI para proporcionar una experiencia de usuario agradable y fluida.",
-        "technologies": "Styled-Component, MUI, RactJS",
-        "icon1": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/html-color.svg",
-        "icon2": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/styled-component-color.svg",
-        "icon3": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/mui-color.svg",
-        "icon4": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/react-color.svg",
+        "tech":
+            [
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/html-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/styled-component-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/mui-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/react-color.svg"
+            ],
         "linkRepo": "https://ranking-app-eosin.vercel.app/",
         "linkDemo": "https://github.com/AleMCuitino/RankingApp"
     },
@@ -68,11 +74,13 @@
         "coverImgAlt": "",
         "subtitle": "Maquetación web de SoundWave, creación de la estructura visual de la página, desarrollada en ReactJs, lo que permite una mayor flexibilidad y escalabilidad en la construcción de la interfaz de usuario. Con ejecución de vistas responsive para cuatro dispositivos diferentes.",
         "description": "Maquetación web de SoundWave, desarrollada en React, para otorgarle mayor flexibilidad y escalabilidad a la construcción de la interfaz de usuario. La web es responsive para cuatro dispositivos diferentes, se ajusta automáticamente al tamaño y tipo de pantalla de cada dispositivo, para proporcionar una experiencia de usuario consistente en cualquier dispositivo. Los estilos de la web se desarrollaron utilizando CSS y Bootstrap, lo que permite un diseño limpio y optimizado de la interfaz de usuario. Se utilizó react-router-dom para definir las rutas de la barra de navegación y mejorar la usabilidad de la web. Finalmente, la réplica se desarrolló bajo el concepto de Atomic Design, a través de componentes independientes que se pueden reutilizar y combinar de diferentes maneras para crear una experiencia de usuario consistente y escalable.",
-        "technologies": "HTML , CSS , Bootstrap & ReactJS ",
-        "icon1": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/html-color.svg",
-        "icon2": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/css-color.svg",
-        "icon3": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/bootstrap-color.svg",
-        "icon4": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/react-color.svg",
+        "tech":
+            [
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/html-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/css-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/bootstrap-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/react-color.svg"
+            ],
         "linkRepo": "https://github.com/AleMCuitino/ReplicaWeb ",
         "linkDemo": "https://replica-web-ten.vercel.app/"
     }
