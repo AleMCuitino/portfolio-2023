@@ -48,10 +48,11 @@ function ResponsiveAppBar() {
                         component="a"
                         href="/"
                         sx={{
-                            mx: 8,
-                            ml: 20,
+                            my: { sm: 2, lg:3, xl:8 },
+                            ml: { sm: 10, lg:20, xl:25 },
+                            mr: { xl:40},
                             display: { xs: 'none', md: 'flex' },
-                            fontSize: 28,
+                            fontSize: { sm: 22, md: 28, lg:32, xl:38 },
                             fontWeight: 700,
                             color: "#E9417B",
                             textDecoration: 'none',
@@ -104,7 +105,7 @@ function ResponsiveAppBar() {
                         component="a"
                         href=""
                         sx={{
-                            mt: 5,
+                            my: { xs:2, sm:4, md:5, xl:7},
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
                             fontWeight: 700,
@@ -114,14 +115,20 @@ function ResponsiveAppBar() {
                     >
                         Ale M.Cuitiño
                     </Typography>
-                    <Box sx={{ ml: 30, mr: 10, flexGrow: 1, display: { xs: 'none', md: 'flex'}, justifyContent: 'space-around' }}>
+                    <Box 
+                        sx={{ 
+                            ml: { md: '20', xl: '30'}, 
+                            mr: 10, 
+                            flexGrow: 1, 
+                            display: { xs: 'none', md: 'flex'}, 
+                            justifyContent: 'space-around' }}>
                         {pages.map((page) => (
                             <Button
                                 key={page.name}
                                 onClick={handleCloseNavMenu}
                                 sx={{ 
-                                    mx: 5,
-                                    mr: 5, 
+                                    mx: { sm: 2, lg:5},
+                                    mr: { sm: 1, md:2},
                                     color: "#E9417B",
                                     fontSize:18, 
                                     display: 'block' }}
