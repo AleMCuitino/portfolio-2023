@@ -134,17 +134,21 @@ const ProjectId = () => {
                         alignItems: 'center',
                         gap: '10rem'
                     }}>
-                    <Box
-                        mt={10}
-                        sx={{
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                            gap:'5rem'
-                        }}>
-                        <img src={project?.icon1}></img>
-                        <img src={project?.icon2}></img> 
-                        <img src={project?.icon3}></img> 
-                    </Box>
+                    
+                    {Array.isArray(project.tech) && (
+                        <Box
+                            mt={10}
+                            sx={{
+                                display: 'flex',
+                                flexWrap: 'wrap',
+                                justifyContent: 'space-between',
+                                gap:'5rem'
+                            }}>
+                                {project.tech.map((tech, index) => (
+                                <img src={tech} alt={index}></img>
+                                ))}
+                            </Box>
+                            )}
                     <Typography
                         variant='p'
                         sx={{
