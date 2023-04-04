@@ -27,6 +27,7 @@ const Boarding = () => {
                         fontFamily: 'Kanit, sans-serif',
                         fontSize: 150,
                         fontWeight: 700,
+                        letterSpacing: '0.0125em',
                         textDecoration: 'none',
                         color: "#E9417B",
                         '&::after': {

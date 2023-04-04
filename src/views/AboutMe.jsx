@@ -58,6 +58,7 @@ const AboutMe = () => {
                     >
                 <Link 
                     to='https://github.com/AleMCuitino/portfolio-2023'
+                    target="_blank"
                     >     
                     <GitHub sx={{
                         color: "#E9417B",
@@ -66,6 +67,7 @@ const AboutMe = () => {
                 </Link>   
                 <Link 
                     to='https://github.com/AleMCuitino/portfolio-2023'
+                    target="_blank"
                     >
                     <LinkedIn
                         sx={{
