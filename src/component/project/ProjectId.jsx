@@ -110,6 +110,7 @@ const ProjectId = () => {
                             sx={{
                                 fontWeight: '300',
                                 fontSize: '1.25em',
+                                textAlign: 'justify'
                             }}
                         >
                             {project?.description}
@@ -154,7 +155,9 @@ const ProjectId = () => {
                         sx={{
                             fontWeight: '300',
                             fontSize: '1.25em',
-                        }}                        >
+                            textAlign: 'justify'
+                        }}
+                        >
                             {project?.description2}
                     </Typography>
                 </Box>
