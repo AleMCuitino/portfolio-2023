@@ -13,6 +13,7 @@ const Boarding = () => {
         }}>
             <Box sx={{
                 mr: '10vw',
+                mx: { xs:10, sm: 15, md:20, xl: 30 },
                 display: 'flex',
                 flexDirection: 'column'
             }}>
@@ -23,7 +24,7 @@ const Boarding = () => {
                         justifyItems: 'center',
                         alignItems: 'center',
                         fontFamily: 'Kanit, sans-serif',
-                        fontSize: { xs: 50, sm: 100, md: 130, lg: 160, xl: 220 },
+                        fontSize: { xs: 80, sm: 100, md: 130, lg: 160, xl: 220 },
                         fontWeight: 700,
                         letterSpacing: '0.0125em',
                         textDecoration: 'none',
@@ -47,9 +48,9 @@ const Boarding = () => {
                         display: { xs: 'flex', md: 'flex' },
                         height: 'auto',
                         color: "#E9417B",
-                        width: {md: 250, lg: 300, xl: 400},
-                        fontSize: { xs: 14, sm: 18, md: 22, xl:28 },
-                        fontWeight: { xs: 200, sm: 200, md: 300 },
+                        width: { xs: 80, sm: 150, md: 250, lg: 300, xl: 400 },
+                        fontSize: { xs: 16, sm: 20, md: 24, xl:28 },
+                        fontWeight: { xs: 200, sm: 200, xl: 300 },
                         textDecoration: 'none',
                         justifyItems: 'center',
                         alignItems: { xs: 'flex-start', sm: 'flex-start', md: 'center' },

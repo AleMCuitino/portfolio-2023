@@ -105,7 +105,7 @@ function ResponsiveAppBar() {
                         component="a"
                         href=""
                         sx={{
-                            my: { xs:2, sm:4, md:5, xl:7},
+                            my: { xs:2, sm:3, md:3, xl:7},
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
                             fontWeight: 700,
@@ -127,8 +127,7 @@ function ResponsiveAppBar() {
                                 key={page.name}
                                 onClick={handleCloseNavMenu}
                                 sx={{ 
-                                    mx: { sm: 2, lg:5},
-                                    mr: { sm: 1, md:2},
+                                    // mr: { sm: 1, md:2},
                                     color: "#E9417B",
                                     fontSize:18, 
                                     display: 'block' }}
