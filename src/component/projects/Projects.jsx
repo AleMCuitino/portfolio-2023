@@ -4,7 +4,7 @@ import Works from '../../data/Data.json';
 import { Box } from '@mui/system';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import {  Paper } from '@mui/material';
+import {  CardActionArea, Paper } from '@mui/material';
 
 const Projects = () => {
 
@@ -23,6 +23,14 @@ const Projects = () => {
         {
           Works && Works.map(work => {
             return (
+            <CardActionArea 
+            sx={{
+              position: 'relative',
+              display: 'flex',
+              justifyContent: 'space-evenly',
+              alignItems: 'center',
+            }}
+              >
               <Paper
                 key={work.id}
                 onClick={() => navigate(`/proyecto/${work.id}`)}
@@ -40,6 +48,7 @@ const Projects = () => {
                   // maxHeight: { xs: 200, sm: 250, md: 350, xl: 400 },
                   // maxWidth: { xs: 300, sm: 450, md: 750, xl: 1050 }
                 }}>
+                
                 <Box sx={{
                   display: 'flex',
                   flexDirection: 'column',
@@ -71,6 +80,7 @@ const Projects = () => {
                     {work.subtitle}
                   </Typography>
                 </Box>
+                
                 <CardMedia
                   component="img"
                   image={work.imgUrl}
@@ -81,6 +91,7 @@ const Projects = () => {
                   }}
                 />
               </Paper>
+              </CardActionArea>
             )
           })}
       </Box>
