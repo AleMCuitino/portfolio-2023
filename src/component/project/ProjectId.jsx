@@ -70,19 +70,20 @@ const ProjectId = () => {
                 >
                 </section>
                 <Box
-                    mx={20}
-                    mt={20}
                     sx={{
+                        mx: { xs: 5, md: 10, lg: 20, xl: 25 },
+                        mt: {xs: 5, sm: 10, md: 20 },
                         display: 'flex',
-                        justifyContent: 'space-between',
-                        gap: '10rem'
+                        flexDirection: { xs: 'column', md: 'row' },
+                        justifyContent: {xs: 'flex-start', md: 'space-between' },
+                        gap: { xs: '2rem', sm: '4rem', md: '8rem', lg: '10rem' }
                     }}
                 >
                     <section>
                         <Typography
                             variant='h3'
-                            mb={2}
                             sx={{
+                                mb: {xs: 2, sm: 3, md: 4 },
                                 fontWeight: '600',
                             }}
                         >
@@ -108,8 +109,9 @@ const ProjectId = () => {
                         <Typography
                             variant='p'
                             sx={{
+                                mb: {xs: 2, sm: 3, md: 4 },
                                 fontWeight: '300',
-                                fontSize: '1.25em',
+                                fontSize: { xs: '1em', md: '1.25em', xl: '1.5em' },
                                 textAlign: 'justify'
                             }}
                         >
@@ -121,40 +123,49 @@ const ProjectId = () => {
                         image={project?.imgUrl}
                         alt="green iguana"
                         sx={{
-                            maxHeight: { xs: 150, sm: 350, md: 450, xl: 650 },
-                            maxWidth: { xs: 150, sm: 350, md: 450, xl: 650 }
+                            maxHeight: { xs: 350, sm: 450, xl: 650 },
+                            maxWidth: { xs: 350, sm: 450, xl: 650 }
                         }}
                     />
                 </Box>
                 <Box
-                    mx={20}
-                    my={20}
                     sx={{
+                        mx: { xs: 5, md: 10, lg: 20, xl: 25 },
+                        my: {xs: 5, sm: 10, md: 20 },
                         display: 'flex',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                        gap: '10rem'
+                        flexDirection: { xs: 'column', sm: 'column', md: 'row'},
+                        justifyContent: 'center',
+                        alignItems: 'flex-start',
+                        gap: { md: '5rem', lg: '8rem' }
                     }}>
                     
                     {Array.isArray(project.tech) && (
-                        <Box
-                            mt={10}
-                            sx={{
-                                display: 'flex',
-                                flexWrap: 'wrap',
-                                justifyContent: 'space-between',
-                                gap:'5rem'
+                    <Box
+                        sx={{
+                            width: '50%',
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            justifyContent: 'space-between',
+                            alignItems: 'flex-start',
+                            gap: { xs: '2rem', sm: '3rem', md: '5rem' },
                             }}>
                                 {project.tech.map((tech, index) => (
-                                <img src={tech} alt={index}></img>
+                                <img 
+                                    src={tech} 
+                                    alt={index} 
+                                    sx={{
+                                        maxWidth: { xs: '20%', sm: '20%', md: '80%', lg: '100%'},
+                                        height: 'auto'
+                                        }} ></img>
                                 ))}
                             </Box>
                             )}
                     <Typography
                         variant='p'
                         sx={{
+                            width: '50%',
                             fontWeight: '300',
-                            fontSize: '1.25em',
+                            fontSize: { xs: '1em', md: '1.25em', xl: '1.5em' },
                             textAlign: 'justify'
                         }}
                         >
@@ -162,40 +173,26 @@ const ProjectId = () => {
                     </Typography>
                 </Box>
                 <Box
-                    mx={20}
-                    mb={20}
                     sx={{
+                        mx: {xs: 5, sm: 10, md: 20 },
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'flex-end',
                     }}>
-                    <CardMedia
-                        component="img"
-                        image={project?.imgUrl}
-                        alt="green iguana"
+                    {Array.isArray(project.imgProject) && (
+                        <Box
                         sx={{
-                            maxHeight: { xs: 50, sm: 150, md: 250, xl: 350 },
-                            maxWidth: { xs: 50, sm: 150, md: 250, xl: 350 }
-                        }}
-                    />
-                    <CardMedia
-                        component="img"
-                        image={project?.imgUrl}
-                        alt="green iguana"
-                        sx={{
-                            maxHeight: { xs: 50, sm: 150, md: 250, xl: 350 },
-                            maxWidth: { xs: 50, sm: 150, md: 250, xl: 350 }
-                        }}
-                    />
-                    <CardMedia
-                        component="img"
-                        image={project?.imgUrl}
-                        alt="green iguana"
-                        sx={{
-                            maxHeight: { xs: 50, sm: 150, md: 250, xl: 350 },
-                            maxWidth: { xs: 50, sm: 150, md: 250, xl: 350 }
-                        }}
-                    />
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            justifyContent: 'space-between',
+                            alignItems: 'flex-start',
+                            gap: { xs: '2rem', sm: '3rem', md: '5rem' },
+                        }}>
+                            {project.imgProject.map((imgProject, index) => (
+                            <img src={imgProject} alt={index}></img>
+                            ))}
+                        </Box>
+                    )}
                 </Box>
             </Grid>
         </React.Fragment>
