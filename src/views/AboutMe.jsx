@@ -3,7 +3,7 @@ import Navbar from "../component/navbar/Navbar";
 import ImgBoarding from '../component/img-boarding/ImgBoarding';
 import { Box } from '@mui/system';
 import Line from '../component/line/Line';
-import { Typography } from '@mui/material';
+import { Paper, Typography } from '@mui/material';
 import { Mail, GitHub, LinkedIn } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
@@ -16,8 +16,9 @@ const AboutMe = () => {
                 sx={{
                     minHeight: '100vh',
                     display: 'flex',
+                    flexDirection: { xs: 'column', sm:'row', md: 'row'},
                     alignItems: 'center',
-                    justifyContent: 'space-evenly',
+                    justifyContent: 'space-between',
                 }}
             >
                 <ImgBoarding />
@@ -25,18 +26,18 @@ const AboutMe = () => {
             </Box>
             <Box 
                 sx={{
-                    ml: '12vw',
-                    width: '30vw',
+                    mx: { xs: 8, md: 10, lg: 20, xl: 25 },
+                    width: { xs: '75%', md:'35%'},
                     display: 'flex',
                     alignContent: 'center',
-                    justifyContent: 'space-evenly',
+                    justifyContent: 'center',
                 }}>
                 
                 <Typography
                     variant="p"
                     sx={{
                         color: "#E9417B",
-                        fontSize: { xs: 12, sm: 14, md: 18 },
+                        fontSize: { xs: 14, sm: 16, md: 18 },
                         fontWeight: 300,
                         textAlign: 'justify'
                     }}>
@@ -48,9 +49,9 @@ const AboutMe = () => {
             </Box>
             <Box 
                 sx={{
-                    my: '10vh',
-                    ml: '12vw',
-                    width: '30vw',
+                    my: { xs: 3, md: 5, lg: 5, xl: 15 },
+                    mx: { xs: 8, md: 10, lg: 20, xl: 15 },
+                    width: { xs: '75%', md:'35%'},
                     display: 'flex',
                     alignContent: 'center',
                     justifyContent: 'space-between',
@@ -62,7 +63,7 @@ const AboutMe = () => {
                     >     
                     <GitHub sx={{
                         color: "#E9417B",
-                        fontSize: { xs: 50, sm: 50, md: 50 },
+                        fontSize: { xs: 30, sm: 50, md: 50 },
                     }} />
                 </Link>   
                 <Link 
@@ -72,12 +73,12 @@ const AboutMe = () => {
                     <LinkedIn
                         sx={{
                         color: "#E9417B",
-                        fontSize: { xs: 50, sm: 50, md: 50 },
+                        fontSize: { xs: 30, sm: 50, md: 50 },
                         }}/>
                 </Link>
                 <Mail sx={{
                     color: "#E9417B",
-                    fontSize: { xs: 50, sm: 50, md: 50 },
+                    fontSize: { xs: 30, sm: 50, md: 50 },
                 }} />
             </Box>  
         </React.Fragment>
