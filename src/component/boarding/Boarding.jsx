@@ -1,8 +1,6 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import ImgBoarding from '../img-boarding/ImgBoarding';
 
 const Boarding = () => {
     return (
@@ -15,6 +13,7 @@ const Boarding = () => {
         }}>
             <Box sx={{
                 mr: '10vw',
+                mx: { xs:10, sm: 15, md:20, xl: 30 },
                 display: 'flex',
                 flexDirection: 'column'
             }}>
@@ -25,17 +24,18 @@ const Boarding = () => {
                         justifyItems: 'center',
                         alignItems: 'center',
                         fontFamily: 'Kanit, sans-serif',
-                        fontSize: 150,
+                        fontSize: { xs: 80, sm: 100, md: 130, lg: 160, xl: 220 },
                         fontWeight: 700,
+                        letterSpacing: '0.0125em',
                         textDecoration: 'none',
                         color: "#E9417B",
                         '&::after': {
                             content: '"Web"',
-                            fontSize: 80,
+                            fontSize: { xs: 30, sm: 60, md: 80, lg: 120, xl: 150 },
                             color: " #F5DC4C",
                             position: 'absolute',
-                            right: 50,
-                            top: 350,
+                            right: { xs: 50, sm: 60, md: 60, lg: 50, xl: 180 },
+                            top:  { xs: 310, sm: 280, md: 320, lg: 340, xl: 600 },
                         }
                     }}
                 >
@@ -44,22 +44,20 @@ const Boarding = () => {
                 <Typography
                     variant="p"
                     sx={{
-                        mt: { xs: 2, sm: 2, md: 3, lg: 3, xl: 10 },
-                        // mr: { xs: 0, sm: 0, md: 2, lg: 2, xl: 3 },
+                        mt: { xs: 3, sm: 2, md: 3, xl: 4 },
                         display: { xs: 'flex', md: 'flex' },
                         height: 'auto',
                         color: "#E9417B",
-                        width: 250,
-                        fontSize: 18,
-                        fontWeight: { xs: 10, sm: 300 },
+                        width: { xs: 80, sm: 150, md: 250, lg: 300, xl: 400 },
+                        fontSize: { xs: 16, sm: 20, md: 24, xl:28 },
+                        fontWeight: { xs: 200, sm: 200, xl: 300 },
                         textDecoration: 'none',
                         justifyItems: 'center',
                         alignItems: { xs: 'flex-start', sm: 'flex-start', md: 'center' },
                     }}
                 >
-                    ¡Hola! Soy Alejandra, desarrolladora web frontend junior y diseñadora integral.
+                    ¡Hola! Soy Alejandra, desarrolladora web frontend y diseñadora integral.
                 </Typography>
-                {/* <ImgBoarding /> */}
             </Box>
         </Box >
     )

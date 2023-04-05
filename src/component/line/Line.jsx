@@ -18,9 +18,9 @@ const Line = () => {
     const lineRef = useRef()
 
     const Data = [
-        {id:1, year: 2021, name: 'event one', ref: e1Ref},
-        {id:2, year: 2022, name: 'event two', ref: e2Ref},
-        {id:3, year: 2023, name: 'event three', ref: e3Ref},
+        {id:1, year: 2021, name: 'Diseño', ref: e1Ref},
+        {id:2, year: 2022, name: 'Frontend', ref: e2Ref},
+        {id:3, year: 2023, name: 'Fullstack', ref: e3Ref},
     ]
 
     useEffect(() => {
@@ -40,7 +40,7 @@ const Line = () => {
                 sx={{   
                     height: '100vh',
                     width: '100vw',
-                    display: 'flex',
+                    display: { xs: 'none', sm: 'none', md:'flex'},
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignContent: 'flex-start'
@@ -49,10 +49,10 @@ const Line = () => {
                 <Box 
                     sx={{   
                         display: 'flex',
-                        flexDirection: 'column',
+                        // flexDirection: 'column',
                         justifyContent: 'space-between',
                         alignItems: 'center',
-                        width: '100%',
+                        width: '70%',
                     }}
                     >
                     {Data.map(el=> {
@@ -63,7 +63,11 @@ const Line = () => {
                                 ref={el.ref}
                                 sx={{
                                     padding: '2rem 0 1rem 0',
-                                    color: '#E9417B'
+                                    color: '#E9417B',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'flex-start',
+                                    alignItems: 'flex-start',
                                 }}
                                 >
                                 <Typography
