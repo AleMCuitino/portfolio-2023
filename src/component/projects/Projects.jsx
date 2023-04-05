@@ -75,7 +75,7 @@ const Projects = () => {
                     underline="none"
                     variant="p"
                     sx={{
-                      fontSize: { xs: 12, sm:16, md: 18, lg: 22, xl: 30},
+                      fontSize: { xs: 12, sm:14, md: 16, lg: 18, xl: 24},
                       fontWeight: 300,
                       textAlign: { xs: 'left', sm: 'right' }
                     }}>
@@ -88,7 +88,6 @@ const Projects = () => {
                   image={work.imgUrl}
                   alt="green iguana"
                   sx={{
-                    // display: { xs: 'none', sm: 'flex'},
                     maxHeight: { xs: 250, sm: 350, md: 450, xl: 650 },
                     maxWidth: { xs: 250, sm: 350, md: 450, xl: 650 }
                   }}
