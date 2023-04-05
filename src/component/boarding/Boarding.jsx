@@ -49,7 +49,7 @@ const Boarding = () => {
                         height: 'auto',
                         color: "#E9417B",
                         width: { xs: 80, sm: 150, md: 250, lg: 300, xl: 400 },
-                        fontSize: { xs: 16, sm: 20, md: 24, xl:28 },
+                        fontSize: { xs: 14, sm:16, md: 18, lg: 20, xl: 24},
                         fontWeight: { xs: 200, sm: 200, xl: 300 },
                         textDecoration: 'none',
                         justifyItems: 'center',
