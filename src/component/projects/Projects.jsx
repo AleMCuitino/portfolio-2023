@@ -28,7 +28,7 @@ const Projects = () => {
               position: 'relative',
               display: 'flex',
               justifyContent: 'space-evenly',
-              alignItems: 'center',
+              alignItems: { xs: 'flex-start', md:'center' }
             }}
               >
               <Paper
@@ -38,9 +38,11 @@ const Projects = () => {
                 sx={{
                   position: 'relative',
                   display: 'flex',
-                  justifyContent: 'space-evenly',
+                  flexDirection: {xs: 'column', sm: 'row' },
+                  justifyContent: { xs: 'center', sm: 'space-evenly' },
                   alignItems: 'center',
-                  width: '80%',
+                  gap: { xs: 2, sm: 4, md: 5, xl: 7  },
+                  width: { sm: '95% ', md: '90%', lg: '80%' },
                   minHeight: '100vh',
                   maxHeight: '100vh',
                   backgroundColor: 'transparent',
@@ -52,7 +54,7 @@ const Projects = () => {
                 <Box sx={{
                   display: 'flex',
                   flexDirection: 'column',
-                  width: '40%',
+                  width:{ xs: '70%', sm: '50%', md: '40%'},
                   // maxHeight: { xs: 200, sm: 250, md: 350, xl: 400 },
                   // maxWidth: { xs: 300, sm: 450, md: 750, xl: 1050 }
                 }}>
@@ -60,11 +62,11 @@ const Projects = () => {
                     variant="h4"
                     component="div"
                     sx={{
-                      mb: 5,
-                      fontSize: 32,
+                      mb: { xs: 1, sm: 2, md: 5 },
+                      fontSize: { xs: 20, sm:26, md: 32, lg: 38, xl: 44},
                       fontWeight: 600,
                       textTransform: 'uppercase',
-                      textAlign: 'right',
+                      textAlign: { xs: 'left', sm: 'right' }
                     }}
                   >
                     {work.title}
@@ -73,9 +75,9 @@ const Projects = () => {
                     underline="none"
                     variant="p"
                     sx={{
-                      fontSize: 20,
+                      fontSize: { xs: 12, sm:16, md: 18, lg: 22, xl: 30},
                       fontWeight: 300,
-                      textAlign: 'right',
+                      textAlign: { xs: 'left', sm: 'right' }
                     }}>
                     {work.subtitle}
                   </Typography>
@@ -86,8 +88,9 @@ const Projects = () => {
                   image={work.imgUrl}
                   alt="green iguana"
                   sx={{
-                    maxHeight: { xs: 150, sm: 350, md: 450, xl: 650 },
-                    maxWidth: { xs: 150, sm: 350, md: 450, xl: 650 }
+                    // display: { xs: 'none', sm: 'flex'},
+                    maxHeight: { xs: 250, sm: 350, md: 450, xl: 650 },
+                    maxWidth: { xs: 250, sm: 350, md: 450, xl: 650 }
                   }}
                 />
               </Paper>

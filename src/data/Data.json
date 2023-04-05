@@ -73,7 +73,8 @@
         "coverImg": "",
         "coverImgAlt": "",
         "subtitle": "Maquetación web de SoundWave, creación de la estructura visual de la página, desarrollada en ReactJs, lo que permite una mayor flexibilidad y escalabilidad en la construcción de la interfaz de usuario. Con ejecución de vistas responsive para cuatro dispositivos diferentes.",
-        "description": "Maquetación web de SoundWave, desarrollada en React, para otorgarle mayor flexibilidad y escalabilidad a la construcción de la interfaz de usuario. La web es responsive para cuatro dispositivos diferentes, se ajusta automáticamente al tamaño y tipo de pantalla de cada dispositivo, para proporcionar una experiencia de usuario consistente en cualquier dispositivo. Los estilos de la web se desarrollaron utilizando CSS y Bootstrap, lo que permite un diseño limpio y optimizado de la interfaz de usuario. Se utilizó react-router-dom para definir las rutas de la barra de navegación y mejorar la usabilidad de la web. Finalmente, la réplica se desarrolló bajo el concepto de Atomic Design, a través de componentes independientes que se pueden reutilizar y combinar de diferentes maneras para crear una experiencia de usuario consistente y escalable.",
+        "description": "Maquetación web de SoundWave, desarrollada en React, para otorgarle mayor flexibilidad y escalabilidad a la construcción de la interfaz de usuario. La web es responsive para cuatro dispositivos diferentes, se ajusta automáticamente al tamaño y tipo de pantalla de cada dispositivo, para proporcionar una experiencia de usuario consistente en cualquier dispositivo.", 
+        "description2": "Los estilos de la web se desarrollaron utilizando CSS y Bootstrap, lo que permite un diseño limpio y optimizado de la interfaz de usuario. Se utilizó react-router-dom para definir las rutas de la barra de navegación y mejorar la usabilidad de la web. Finalmente, la réplica se desarrolló bajo el concepto de Atomic Design, a través de componentes independientes que se pueden reutilizar y combinar de diferentes maneras para crear una experiencia de usuario consistente y escalable.",
         "tech":
             [
                 "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/html-color.svg",
@@ -82,6 +83,12 @@
                 "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/react-color.svg"
             ],
         "linkRepo": "https://github.com/AleMCuitino/ReplicaWeb ",
-        "linkDemo": "https://replica-web-ten.vercel.app/"
+        "linkDemo": "https://replica-web-ten.vercel.app/",
+        "imgProject":
+        [ 
+            "",
+            "",
+            ""
+        ]
     }
 ]

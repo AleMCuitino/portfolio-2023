@@ -41,17 +41,22 @@ function ResponsiveAppBar() {
             boxShadow: 'none'
         }}>
             <Container maxWidth="xl">
-                <Toolbar disableGutters sx={{display: 'flex', justifyContent: 'space-between' }}>
+                <Toolbar 
+                        disableGutters 
+                        sx={{ 
+                            mx: { xs: 5, md: 10, lg: 20, xl: 25 },
+                            display: 'flex', 
+                            justifyContent: 'space-between' }}>
                     <Typography
                         variant="h6"
                         noWrap
                         component="a"
                         href="/"
                         sx={{
-                            mx: 8,
-                            ml: 20,
+                            my: { sm: 1, lg:2, xl:5 },
+                            mr: { xl:40},
                             display: { xs: 'none', md: 'flex' },
-                            fontSize: 28,
+                            fontSize: { sm: 22, md: 28, lg:32, xl:38 },
                             fontWeight: 700,
                             color: "#E9417B",
                             textDecoration: 'none',
@@ -67,7 +72,7 @@ function ResponsiveAppBar() {
                             aria-controls="menu-appbar"
                             aria-haspopup="true"
                             onClick={handleOpenNavMenu}
-                            sx={{ mt: 5, color: "#E9417B", }}
+                            sx={{ my: 2, color: "#E9417B", }}
                         >
                             <MenuIcon />
                         </IconButton>
@@ -104,7 +109,7 @@ function ResponsiveAppBar() {
                         component="a"
                         href=""
                         sx={{
-                            mt: 5,
+                            my: { sm: 2, lg:2, xl:8 },
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
                             fontWeight: 700,
@@ -114,14 +119,20 @@ function ResponsiveAppBar() {
                     >
                         Ale M.Cuitiño
                     </Typography>
-                    <Box sx={{ ml: 30, mr: 10, flexGrow: 1, display: { xs: 'none', md: 'flex'}, justifyContent: 'space-around' }}>
+                    <Box 
+                        sx={{
+                            my: { sm: 2, lg:2, xl:8 },
+                            flexGrow: 1, 
+                            display: { xs: 'none', md: 'flex'}, 
+                            justifyContent: 'flex-end',
+                            gap: 5, 
+                            }}>
                         {pages.map((page) => (
                             <Button
                                 key={page.name}
                                 onClick={handleCloseNavMenu}
                                 sx={{ 
-                                    mx: 5,
-                                    mr: 5, 
+                                    // mr: { sm: 1, md:2},
                                     color: "#E9417B",
                                     fontSize:18, 
                                     display: 'block' }}
