@@ -49,10 +49,10 @@ const Line = () => {
                 <Box 
                     sx={{   
                         display: 'flex',
-                        flexDirection: 'column',
+                        // flexDirection: 'column',
                         justifyContent: 'space-between',
                         alignItems: 'center',
-                        width: '100%',
+                        width: '70%',
                     }}
                     >
                     {Data.map(el=> {

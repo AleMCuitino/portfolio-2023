@@ -14,11 +14,12 @@ function ImgBoarding() {
                         component="img"
                         sx={{
                             mx: { xs: 5, md: 10, lg: 20, xl: 25 },
-                            my: { xs: 3, md: 5, lg: 5, xl: 15 },
+                            mt: { xs: 3, md: 5, lg: 5, xl: 15 },
                             height: '100%',
                             width: 'auto',
-                            maxHeight: { xs:400, sm: 350, md: 400, lg: 480, xl:650 },
+                            maxHeight: { xs: 300, sm: 350, md: 400, lg: 480, xl:650 },
                             display: { xs: 'flex', md: 'flex' },
+                            justifyContent: 'center'
                         }}
                         alt="Alejandra Morales Cuitiño."
                         src={over ? aleHover : ale}
