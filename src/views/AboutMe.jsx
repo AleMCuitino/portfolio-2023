@@ -6,6 +6,7 @@ import Line from '../component/line/Line';
 import { Paper, Typography } from '@mui/material';
 import { Mail, GitHub, LinkedIn } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import Footer from '../component/footer/Footer'
 
 const AboutMe = () => {
     return (
@@ -50,40 +51,7 @@ const AboutMe = () => {
                     Disfruto del deporte y el cuerpo en movimiento.
                 </Typography>
             </Box>
-            <Box 
-                sx={{
-                    my: { xs: 3, md: 5, lg: 5, xl: 15 },
-                    mx: { xs: 5, md: 10, lg: 20, xl: 15 },
-                    width: { xs: '75%', md:'35%'},
-                    display: 'flex',
-                    alignContent: 'center',
-                    justifyContent: 'space-between',
-                    }}
-                    >
-                <Link 
-                    to='https://github.com/AleMCuitino/portfolio-2023'
-                    target="_blank"
-                    >     
-                    <GitHub sx={{
-                        color: "#E9417B",
-                        fontSize: { xs: 30, sm: 50, md: 50 },
-                    }} />
-                </Link>   
-                <Link 
-                    to='https://github.com/AleMCuitino/portfolio-2023'
-                    target="_blank"
-                    >
-                    <LinkedIn
-                        sx={{
-                        color: "#E9417B",
-                        fontSize: { xs: 30, sm: 50, md: 50 },
-                        }}/>
-                </Link>
-                <Mail sx={{
-                    color: "#E9417B",
-                    fontSize: { xs: 30, sm: 50, md: 50 },
-                }} />
-            </Box>  
+            <Footer />
         </React.Fragment>
     )
 }

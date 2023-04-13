@@ -13,8 +13,6 @@ import MenuItem from '@mui/material/MenuItem';
 import { grey } from '@mui/material/colors';
 
 const pages = [{name:'Proyectos', url:'/proyectos'}, {name:'curriculum', url:'/cv/alemcuitino'}, {name:'Sobre mi', url:'/sobremi'}]; // cada uno que sea un objeto
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-const color = grey[50];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -36,9 +34,9 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar position="static" color="grey" sx={{
+        <AppBar position="fixed" elevation={0} sx={{
             width: '100%',
-            boxShadow: 'none'
+            background: 'transparent', 
         }}>
             <Container maxWidth="xl">
                 <Toolbar 
@@ -46,7 +44,8 @@ function ResponsiveAppBar() {
                         sx={{ 
                             mx: { xs: 5, md: 10, lg: 20, xl: 25 },
                             display: 'flex', 
-                            justifyContent: 'space-between' }}>
+                            justifyContent: 'space-between',
+                            }}>
                     <Typography
                         variant="h6"
                         noWrap

@@ -2,6 +2,7 @@
     {
         "id": 1,
         "title": "Duck or goose",
+        "imgBanner": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-banner/1.svg",
         "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/duck-or-goose.png",
         "imgAlt": "",
         "coverImg": "",

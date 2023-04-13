@@ -1,6 +1,8 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import CardMedia from '@mui/material/CardMedia';
+import portfolio from '../../assets/portfolio.svg'
 
 const Boarding = () => {
     return (
@@ -17,7 +19,7 @@ const Boarding = () => {
                 display: 'flex',
                 flexDirection: 'column'
             }}>
-                <Typography
+                {/* <Typography
                     variant="h1"
                     sx={{
                         display: { xs: 'flex', md: 'flex' },
@@ -40,15 +42,24 @@ const Boarding = () => {
                     }}
                 >
                     portfolio
-                </Typography>
+                </Typography> */}
+                <CardMedia
+                    component="img"
+                    image={portfolio}
+                    alt="portfolio web"
+                    sx={{
+                        maxHeight: { xs: 350, sm: 450, md: 550, lg: 650, xl: 850 },
+                        maxWidth: { xs: 350, sm: 450, md: 550, lg: 650, xl: 850 }
+                    }}
+                />
                 <Typography
                     variant="p"
                     sx={{
-                        mt: { xs: 3, sm: 2, md: 3, xl: 4 },
+                        mt: { xs: 3, sm: 2, md: 2, xl: 4 },
                         display: { xs: 'flex', md: 'flex' },
                         height: 'auto',
                         color: "#E9417B",
-                        width: { xs: 80, sm: 150, md: 250, lg: 300, xl: 400 },
+                        width: { sm: 300, md: 350, lg: 400, xl: 600 },
                         fontSize: { xs: 14, sm:16, md: 18, lg: 20, xl: 24},
                         fontWeight: { xs: 200, sm: 200, xl: 300 },
                         textDecoration: 'none',
@@ -56,7 +67,8 @@ const Boarding = () => {
                         alignItems: { xs: 'flex-start', sm: 'flex-start', md: 'center' },
                     }}
                 >
-                    ¡Hola! Soy Alejandra, desarrolladora web frontend y diseñadora integral.
+                    ¡Hola! Soy Alejandra, desarrolladora web frontend y diseñadora integral. Bienvenidos a mi portfolio.{'\n'} 
+                    🚧 en construcción 🚧
                 </Typography>
             </Box>
         </Box >

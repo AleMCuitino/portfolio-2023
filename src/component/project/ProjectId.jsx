@@ -60,9 +60,9 @@ const ProjectId = () => {
             >
                 <section
                     className="banner"
-                    image={project?.imgUrl}
+                    image={project?.imgBanner}
                     style={{
-                        backgroundImage: `url(${project?.imgUrl})`,
+                        backgroundImage: `url(${project?.imgBanner})`,
                         backgroundSize:
                             `${(window.outerHeight - scrollPosition) / 3
                             }%`,
