@@ -46,7 +46,8 @@ function ResponsiveAppBar() {
                         sx={{ 
                             mx: { xs: 5, md: 10, lg: 20, xl: 25 },
                             display: 'flex', 
-                            justifyContent: 'space-between' }}>
+                            justifyContent: 'space-between',
+                            color: 'transparent' }}>
                     <Typography
                         variant="h6"
                         noWrap
