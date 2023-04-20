@@ -6,7 +6,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 500px;
-    padding: 0 5%;
-    transition: 0.1s linear;
+    height: 600px;
+    /* padding: 0 5%; */
+    transition: 0.2s linear;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        background-position: 50% 0%;
+    }
 }

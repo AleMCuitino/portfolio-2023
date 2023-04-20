@@ -14,7 +14,7 @@ const Projects = () => {
     <React.Fragment>
       <Box sx={{
         width: '100%',
-        backgroundColor: '#F7C4D3',
+        // backgroundColor: '#F7C4D3',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',

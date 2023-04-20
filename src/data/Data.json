@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Duck or goose",
         "imgBanner": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-banner/1.svg",
-        "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/duck-or-goose.png",
+        "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-proj/duck-or-goose.png",
         "imgAlt": "",
         "coverImg": "",
         "coverImgAlt": "",
@@ -22,7 +22,8 @@
     {
         "id": 2,
         "title": "Escape room 404",
-        "imgUrl": "",
+        "imgBanner": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-banner/2.svg",
+        "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-proj/escape-room.png",
         "imgAlt": "",
         "coverImg": "",
         "coverImgAlt": "",
@@ -49,7 +50,8 @@
     {
         "id": 3,
         "title": "Rank App",
-        "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/RankingApp/main/src/assets/images/screenshot01.png",
+        "imgBanner": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-banner/3.svg",
+        "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-proj/rank-app.png",
         "imgAlt": "",
         "coverImg": "",
         "coverImgAlt": "",
@@ -69,7 +71,8 @@
     {
         "id": 4,
         "title": "Réplica Web",
-        "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/sound-wave.png",
+        "imgBanner": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-banner/4.svg",
+        "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-proj/sound-wave.png",
         "imgAlt": "",
         "coverImg": "",
         "coverImgAlt": "",
