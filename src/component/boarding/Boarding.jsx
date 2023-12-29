@@ -67,8 +67,8 @@ const Boarding = () => {
                         alignItems: { xs: 'flex-start', sm: 'flex-start', md: 'center' },
                     }}
                 >
-                    ¡Hola! Soy Alejandra, desarrolladora web frontend y diseñadora integral. Bienvenidos a mi portfolio.{'\n'} 
-                    🚧 en construcción 🚧
+                    ¡Hola! Soy Alejandra, diseñadora UX/UI y desarrolladora web frontend. {'\n'}  Bienvenidos a mi portfolio.{'\n'} 
+                    {/* 🚧 en construcción 🚧 */}
                 </Typography>
             </Box>
         </Box >
