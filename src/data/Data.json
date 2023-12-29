@@ -1,6 +1,26 @@
 [
     {
-        "id": 1,
+    "id": 1,
+    "title": "FitApp",
+    "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/fit-app.png",
+    "imgAlt": "Imagen de marca de FitApp",
+    "coverImg": "",
+    "subtitle": "FitApp es una plataforma digital que permite la planificación de entrenamiento físico según el tiempo e interés del usuario.",
+    "description":"El problema identificado es el poco tiempo para planificar y coordinar entrenamientos físicos en adultos laboralmente activos y una agenda apretada. Es por ello, que el objetivo de este proyecto fue diseñar una aplicación para FitApp que les permita a los usuarios planificar sus entrenamientos de forma fácil y flexible.",
+    "technologies": "Figma",
+    "icon1": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/figma-color.svg",
+    "Icon2": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/ilustrator-color.svg",
+    "Icon3":
+"https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/js-color.svg",
+    "icon4": "",
+    "icon5": "",
+    "icon6": "",
+    "linkRepo": "https://github.com/AleMCuitino/Duck-or-Goose",
+    "linkDemo": "https://www.figma.com/proto/MfunCZCMsh3XX1uxWVTKlM/Fitness-App?type=design&node-id=207-3&t=GQ45P1dCGgLlW1s0-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=9%3A117&mode=design"
+},
+
+    {
+        "id": 4,
         "title": "Duck or goose",
         "imgBanner": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-banner/1.svg",
         "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-proj/duck-or-goose.png",
@@ -20,7 +40,7 @@
         "linkDemo": "https://duck-or-goose.vercel.app/"
     },
     {
-        "id": 2,
+        "id": 5,
         "title": "Escape room 404",
         "imgBanner": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-banner/2.svg",
         "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-proj/escape-room.png",
@@ -48,7 +68,7 @@
         "linkDemo": "no disponible"
     },
     {
-        "id": 3,
+        "id": 6,
         "title": "Rank App",
         "imgBanner": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-banner/3.svg",
         "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-proj/rank-app.png",
@@ -69,7 +89,7 @@
         "linkDemo": "https://github.com/AleMCuitino/RankingApp"
     },
     {
-        "id": 4,
+        "id": 7,
         "title": "Réplica Web",
         "imgBanner": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-banner/4.svg",
         "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-proj/sound-wave.png",
