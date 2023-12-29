@@ -2,11 +2,22 @@
     {
     "id": 1,
     "title": "FitApp",
+    "imgBanner": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-banner/5.svg",
     "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/fit-app.png",
     "imgAlt": "Imagen de marca de FitApp",
     "coverImg": "",
     "subtitle": "FitApp es una plataforma digital que permite la planificación de entrenamiento físico según el tiempo e interés del usuario.",
     "description":"El problema identificado es el poco tiempo para planificar y coordinar entrenamientos físicos en adultos laboralmente activos y una agenda apretada. Es por ello, que el objetivo de este proyecto fue diseñar una aplicación para FitApp que les permita a los usuarios planificar sus entrenamientos de forma fácil y flexible.",
+    "titlegoal":"Rol y responsabilidades",
+    "goals": "Mi rol fue de diseñadora de UX para la creación de la aplicación FitApp. En cuanto las responsabilidades, estas implicaron la realización de entrevistas, realización de wireframes en papel y digitales, creación de prototipos de baja y alta fidelidad, realización de estudios de facilidad de uso, accesibilidad e iteración de diseños.",
+    "tech":
+            [
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/html-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/sass-color.svg",
+                "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/js-color.svg"
+            ],
+    "titleuser":"",
+    "user":"",
     "technologies": "Figma",
     "icon1": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/figma-color.svg",
     "Icon2": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/ilustrator-color.svg",
@@ -16,7 +27,13 @@
     "icon5": "",
     "icon6": "",
     "linkRepo": "https://github.com/AleMCuitino/Duck-or-Goose",
-    "linkDemo": "https://www.figma.com/proto/MfunCZCMsh3XX1uxWVTKlM/Fitness-App?type=design&node-id=207-3&t=GQ45P1dCGgLlW1s0-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=9%3A117&mode=design"
+    "linkDemo": "https://www.figma.com/proto/MfunCZCMsh3XX1uxWVTKlM/Fitness-App?type=design&node-id=207-3&t=GQ45P1dCGgLlW1s0-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=9%3A117&mode=design",
+    "imgProject":
+        [ 
+            "",
+            "",
+            ""
+        ]
 },
 
     {
@@ -29,7 +46,7 @@
         "coverImgAlt": "",
         "subtitle": "Pato o Ganso es una rueda de la perdición para el sacrificio de sus participantes, la aplicación web utiliza un método aleatorio para escoger al participante a sacrificar.",
         "description": "Pato o Ganso es una aplicación web para sacrificar a programadores (jugadores), al que se aplica un sistema aleatorio para elegir entre ellos el jugador a sacrificar. La aplicación cuenta con una función principal que consiste en seleccionar de manera aleatoria un participante para que sea eliminado del juego hasta que no quede ninguno más para sacrificar.",
-        "description2": "Además, es posible agregar nuevos participantes para que sean parte en el juego, con la posibilidad de eliminar a los que ya están en la lista. La tecnología utilizada en Duck or Goose incluye varios proyectos de código abierto, como Sass, Bootstrap, node.js, jQuery y owlCarousel. También se utilizó las Media Queries simplificada por Sass, Fog Animation y Animista Animations como recursos de apoyo utilizados para desarrollar la aplicación.",
+        "goals": "Además, es posible agregar nuevos participantes para que sean parte en el juego, con la posibilidad de eliminar a los que ya están en la lista. La tecnología utilizada en Duck or Goose incluye varios proyectos de código abierto, como Sass, Bootstrap, node.js, jQuery y owlCarousel. También se utilizó las Media Queries simplificada por Sass, Fog Animation y Animista Animations como recursos de apoyo utilizados para desarrollar la aplicación.",
         "tech":
             [
                 "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/html-color.svg",
