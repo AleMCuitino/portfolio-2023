@@ -12,31 +12,54 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { grey } from '@mui/material/colors';
 
-const pages = [{name:'Proyectos', url:'/proyectos'}, {name:'curriculum', url:'/cv/alemcuitino'}, {name:'Sobre mi', url:'/sobremi'}]; // cada uno que sea un objeto
-
-function ResponsiveAppBar() {
+const pages = [
+    { name: 'Proyectos', url: '/proyectos' },
+    { name: 'Curriculum', url: '/cv/alemcuitino' },
+    { name: 'Sobre mi', url: '/sobremi' }
+  ];
+  
+  function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
-
+    const [isScrolled, setIsScrolled] = React.useState(false);
+  
     const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
+      setAnchorElNav(event.currentTarget);
     };
+  
     const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
+      setAnchorElUser(event.currentTarget);
     };
-
+  
     const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
+      setAnchorElNav(null);
     };
-
+  
     const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
+      setAnchorElUser(null);
     };
+  
+    React.useEffect(() => {
+      const handleScroll = () => {
+        const scrollTop = window.scrollY;
+        setIsScrolled(scrollTop > 0);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
     return (
-        <AppBar position="fixed" elevation={0} sx={{
-            width: '100%',
-            background: 'transparent', 
+        <AppBar position="fixed"
+        elevation={0}
+        sx={{
+          width: '100%',
+          background: isScrolled ? 'rgba(255, 255, 255, 0.8)' : 'transparent',
+          backdropFilter: isScrolled ? 'blur(10px)' : 'none',
+          transition: 'background 0.3s ease-out, backdrop-filter 0.3s ease-out'
         }}>
             <Container maxWidth="xl">
                 <Toolbar 
