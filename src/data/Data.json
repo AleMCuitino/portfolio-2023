@@ -18,7 +18,8 @@
             ],
     "titleuser":"Público objetivo",
     "user":"Esta herramienta fue diseñada para usuarios que se motivan por el ejericio físico, pero con una agenda muy apretada, siempre buscan darse un tiempo para entrenar y mantenerse activos.",
-    "research":"Dentro de la investigación, las interacciones más destacas es que los usuarios no cuentan con horario fijo determinado para entrenar por lo que buscan un espacio dentro de su apretad agenda para ejercitarse a diario. Y, por otro lado, no cuentan con una guía flexible y dinámica que se adapte a sus tiempos y espacios. Ir al gimnasio les demanda tiempo, con el cual no siempre cuentan.",
+    "titleresearch":"investigación",
+    "research":"Las interacciones más destacas es que los usuarios no cuentan con horario fijo determinado para entrenar por lo que buscan un espacio dentro de su apretad agenda para ejercitarse a diario. Y, por otro lado, no cuentan con una guía flexible y dinámica que se adapte a sus tiempos y espacios. Ir al gimnasio les demanda tiempo, con el cual no siempre cuentan.",
     "insights":"En el proceso de desarrollo del diseño se busco responder a las necesidades del usuario a través de la implementación de diferentes aspectos que les permitan facilitar las tareas al momento de entrenar.",
     "technologies": "Figma",
     "imgMockup":
@@ -49,6 +50,7 @@
             "https://github.com/AleMCuitino/portfolio-2023/blob/develop/src/assets/img-design/fitapp/design-c.png",
             "https://github.com/AleMCuitino/portfolio-2023/blob/develop/src/assets/img-design/fitapp/design.png"
         ],
+    "titleConclusion":"Conclusión",
     "conclusion":"La app facilita a los usuarios que logren planificar sus entrenamientos sin el miedo de no poder entrenar, ya que al planificar sienten el control de su actividad física y su agenda. Importante destacar las iteraciones son clave al momento de idear y diseñar una app. El usuario será el que guíe el proceso de diseño, hay que enfocarse en cómo ellos utilizan y navegan por la aplicación. No siempre será como nosotros lo pensamos."    
 },
 
