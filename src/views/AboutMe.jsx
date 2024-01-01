@@ -17,7 +17,7 @@ const AboutMe = () => {
                 sx={{
                     minHeight: '100vh',
                     display: 'flex',
-                    flexDirection: { xs: 'column', sm:'row', md: 'row'},
+                    flexDirection: { xs: 'column', sm: 'row', md: 'row' },
                     alignItems: 'center',
                     justifyContent: { xs: 'flex-start', md: 'space-between' },
                 }}
@@ -25,16 +25,93 @@ const AboutMe = () => {
                 <ImgBoarding />
                 <Line />
             </Box>
-            <Box 
+            <Box
                 sx={{
-                    mx: { xs: 5, md: 10, lg: 20, xl: 25 },
-                    mb: { xs: 5, md: 10, lg: 20, xl: 25 },
-                    width: { xs: '75%', md:'35%'},
+                    width: { xs: '75%', md: '65%' },
                     display: 'flex',
                     alignContent: 'center',
                     justifyContent: 'center',
                 }}>
-                
+                <Box sx={{
+                    ml: { xs: 10, sm: 15, md: 20, xl: 30 },
+                    display: 'flex',
+                    flexDirection: 'column'
+                }}>
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            mt: { xs: 3, sm: 2, md: 2, xl: 4 },
+                            display: { xs: 'flex', md: 'flex' },
+                            height: 'auto',
+                            color: "#E9417B",
+                            width: { sm: 300, md: 350, lg: 400, xl: 600 },
+                            fontSize: { xs: 14, sm: 16, md: 18, lg: 20, xl: 24 },
+                            fontWeight: { xs: 400, sm: 500, xl: 600 },
+                            textDecoration: 'none',
+                            justifyItems: 'center',
+                            alignItems: { xs: 'flex-start', sm: 'flex-start', md: 'center' },
+                        }}
+                    >
+                        Contacto
+                    </Typography>
+                    <Typography
+                        variant="p"
+                        sx={{
+                            mt: { xs: 3, sm: 2, md: 2, xl: 4 },
+                            display: { xs: 'flex', md: 'flex' },
+                            height: 'auto',
+                            color: "#E9417B",
+                            width: { sm: 300, md: 350, lg: 400, xl: 600 },
+                            fontSize: { xs: 14, sm: 16, md: 18, lg: 20, xl: 24 },
+                            fontWeight: { xs: 200, sm: 200, xl: 300 },
+                            textDecoration: 'none',
+                            justifyItems: 'center',
+                            alignItems: { xs: 'flex-start', sm: 'flex-start', md: 'center' },
+                        }}
+                    >
+                        <Link
+                            component={Typography}
+                            to="mailto:alemcuitino@gmail.com"
+                            sx={{
+                                color: "#E9417B", 
+                                textDecoration: 'none', 
+                                '&:hover': {
+                                    textDecoration: 'underline',
+                                },
+                            }}
+                        >
+                            alemcuitino@gmail.com
+                        </Link>
+                    </Typography>
+                    <Typography
+                        variant="p"
+                        sx={{
+                            mt: { xs: 3, sm: 2, md: 2, xl: 4 },
+                            display: { xs: 'flex', md: 'flex' },
+                            height: 'auto',
+                            color: "#E9417B",
+                            width: { sm: 300, md: 350, lg: 400, xl: 600 },
+                            fontSize: { xs: 14, sm: 16, md: 18, lg: 20, xl: 24 },
+                            fontWeight: { xs: 200, sm: 200, xl: 300 },
+                            textDecoration: 'none',
+                            justifyItems: 'center',
+                            alignItems: { xs: 'flex-start', sm: 'flex-start', md: 'center' },
+                        }}
+                    >
+                        <Link component={Typography}
+                            to="https://www.linkedin.com/in/alemcuitino/"
+                            sx={{
+                                color: "#E9417B", 
+                                textDecoration: 'none', 
+                                '&:hover': {
+                                    textDecoration: 'underline',
+                                },
+                            }}>
+                            alemcuitino
+                        </Link>
+                    </Typography>
+                </Box>
+
                 <Typography
                     variant="p"
                     sx={{

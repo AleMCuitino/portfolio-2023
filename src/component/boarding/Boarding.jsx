@@ -15,7 +15,7 @@ const Boarding = () => {
         }}>
             <Box sx={{
                 mr: '10vw',
-                mx: { xs:10, sm: 15, md:20, xl: 30 },
+                mx: { xs: 10, sm: 15, md: 20, xl: 30 },
                 display: 'flex',
                 flexDirection: 'column'
             }}>
@@ -60,14 +60,14 @@ const Boarding = () => {
                         height: 'auto',
                         color: "#E9417B",
                         width: { sm: 300, md: 350, lg: 400, xl: 600 },
-                        fontSize: { xs: 14, sm:16, md: 18, lg: 20, xl: 24},
+                        fontSize: { xs: 14, sm: 16, md: 18, lg: 20, xl: 24 },
                         fontWeight: { xs: 200, sm: 200, xl: 300 },
                         textDecoration: 'none',
                         justifyItems: 'center',
                         alignItems: { xs: 'flex-start', sm: 'flex-start', md: 'center' },
                     }}
                 >
-                    ¡Hola! Soy Alejandra, diseñadora UX/UI y desarrolladora web frontend. {'\n'}  Bienvenidos a mi portfolio.{'\n'} 
+                    ¡Hola! Soy Alejandra, diseñadora UX/UI y desarrolladora web frontend. {'\n'}  Bienvenidos a mi portfolio.{'\n'}
                     {/* 🚧 en construcción 🚧 */}
                 </Typography>
             </Box>
