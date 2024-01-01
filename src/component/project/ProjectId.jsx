@@ -220,6 +220,7 @@ const ProjectId = () => {
                             mb: { xs: 2, sm: 3, md: 4 },
                             width: '100%',
                             display: 'flex',
+                            flexDirection: 'column',
                             justifyContent: 'space-evenly',
                             alignItems: 'center',
                             gap: { xs: '2rem', sm: '3rem', md: '5rem' },
