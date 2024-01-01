@@ -189,8 +189,8 @@ const ProjectId = () => {
                     sx={{
                         mx: { xs: 5, sm: 10, md: 15 },
                         display: 'flex',
-                        justifyContent: 'space-between',
-                        alignItems: 'flex-end',
+                        justifyContent: 'space-evenly',
+                        alignItems: 'flex-start',
                         gap: { md: '1rem', lg: '2rem' }
                     }}>
                     <section>
@@ -216,28 +216,27 @@ const ProjectId = () => {
                         </Typography>
                     </section>
                     <Box
-                    sx={{
-                        mb: { xs: 2, sm: 3, md: 4 },
-                        width: '100%',
-                        display: 'flex',
-                        flexWrap: 'wrap',
-                        justifyContent: 'space-evenly',
-                        alignItems: 'flex-start',
-                        gap: { xs: '2rem', sm: '3rem', md: '5rem' },
-                    }}
-                >
-                    {Array.isArray(project.imgUser) && project.imgMockup.map((imgUser, index) => (
-                        <img
-                            key={index}
-                            src={imgUser}
-                            alt={`imgUser-${index}`}
-                            style={{
-                                width: '25%', // Ajuste para ocupar el 100% del contenedor
-                                height: 'auto'
-                            }}
-                        />
-                    ))}
-                </Box>
+                        sx={{
+                            mb: { xs: 2, sm: 3, md: 4 },
+                            width: '100%',
+                            display: 'flex',
+                            justifyContent: 'space-evenly',
+                            alignItems: 'center',
+                            gap: { xs: '2rem', sm: '3rem', md: '5rem' },
+                        }}
+                    >
+                        {Array.isArray(project.imgUser) && project.imgUser.map((imgUser, index) => (
+                            <img
+                                key={index}
+                                src={imgUser}
+                                alt={`imgUser-${index}`}
+                                style={{
+                                    width: '100%', // Ajuste para ocupar el 100% del contenedor
+                                    height: 'auto'
+                                }}
+                            />
+                        ))}
+                    </Box>
                 </Box>
                 <Box
                     sx={{
@@ -373,19 +372,17 @@ const ProjectId = () => {
                 </Box>
                 <Box
                     sx={{
-                        width: '100%',
+                        width: '75%',
                         display: 'flex',
-                        flexWrap: 'wrap',
-                        justifyContent: 'space-evenly',
-                        alignItems: 'flex-start',
                         gap: { xs: '0,5rem', sm: '1rem', md: '2rem' },
                     }}>
                     {Array.isArray(project.imgDesign) && (
                         <Box
                             sx={{
                                 display: 'flex',
-                                flexWrap: 'wrap',
                                 justifyContent: 'space-evenly',
+                                justifyItems: 'center',
+                                alignContent: 'center',
                                 alignItems: 'flex-start',
                                 // gap: { xs: '2rem', sm: '3rem', md: '1rem' },
                             }}>
