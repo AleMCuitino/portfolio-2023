@@ -18,7 +18,8 @@
             ],
     "titleUser":"Público objetivo",
     "user":"Esta herramienta fue diseñada para usuarios que se motivan por el ejericio físico, pero con una agenda muy apretada, siempre buscan darse un tiempo para entrenar y mantenerse activos.",
-    "imgUser":"https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-user/fitapp/user.png",
+    "imgUser":
+        ["https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-user/fitapp/user.png"],
     "titleResearch":"Investigación",
     "research":"Las interacciones más destacadas es que los usuarios no cuentan con horario fijo determinado para entrenar por lo que buscan un espacio dentro de su apretad agenda para ejercitarse a diario. Y, por otro lado, no cuentan con una guía flexible y dinámica que se adapte a sus tiempos y espacios. Ir al gimnasio les demanda tiempo, con el cual no siempre cuentan.",
     "insights":"En el proceso de desarrollo del diseño se busco responder a las necesidades del usuario a través de la implementación de diferentes aspectos que les permitan facilitar las tareas al momento de entrenar.",
