@@ -104,7 +104,7 @@ const ProjectId = () => {
                         }}
                     />
                 </Box>
-                <Box
+                {/* <Box
                     sx={{
                         // mx: { xs: 5, md: 10, lg: 20, xl: 25 },
                         // my: { xs: 5, sm: 10, md: 20 },
@@ -117,7 +117,7 @@ const ProjectId = () => {
                     {Array.isArray(project.tech) && (
                         <Box
                             sx={{
-                                width: '50%',
+                                width: '1%',
                                 display: 'flex',
                                 flexWrap: 'wrap',
                                 justifyContent: 'space-between',
@@ -129,37 +129,22 @@ const ProjectId = () => {
                                     src={tech}
                                     alt={index}
                                     sx={{
-                                        maxWidth: { xs: '20%', sm: '20%', md: '80%', lg: '100%' },
+                                        maxWidth: { xs: '10%', sm: '12,5%', md: '20%', lg: '25%' },
                                         height: 'auto'
                                     }} ></img>
                             ))}
                         </Box>
                     )}
 
-
-                </Box>
+                </Box> */}
                 <Box
                     sx={{
                         mx: { xs: 5, sm: 10, md: 15 },
+                        my: { xs: 5, sm: 10, md: 15 },
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'flex-end',
-                        gap: { md: '1rem', lg: '2rem' }
                     }}>
-                    {Array.isArray(project.imgProject) && (
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                flexWrap: 'wrap',
-                                justifyContent: 'space-between',
-                                alignItems: 'flex-start',
-                                // gap: { xs: '2rem', sm: '3rem', md: '1rem' },
-                            }}>
-                            {project.imgProject.map((imgMockup, index) => (
-                                <img src={imgMockup} alt={index}></img>
-                            ))}
-                        </Box>
-                    )}
                     <section>
                         <Typography
                             variant='h4'
@@ -168,7 +153,7 @@ const ProjectId = () => {
                                 fontWeight: '400',
                             }}
                         >
-                            {project?.titlegoal}
+                            {project?.titleGoal}
                         </Typography>
                         {/* <Box
                             mb={5}
@@ -216,7 +201,7 @@ const ProjectId = () => {
                                 fontWeight: '400',
                             }}
                         >
-                            {project?.titleuser}
+                            {project?.titleUser}
                         </Typography>
                         <Typography
                             variant='p'
@@ -230,24 +215,34 @@ const ProjectId = () => {
                             {project?.user}
                         </Typography>
                     </section>
-                    {Array.isArray(project.imgMockup) && (
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                flexWrap: 'wrap',
-                                justifyContent: 'space-between',
-                                alignItems: 'flex-start',
-                                // gap: { xs: '2rem', sm: '3rem', md: '1rem' },
-                            }}>
-                            {project.imgMockup.map((imgMockup, index) => (
-                                <img src={imgMockup} alt={index}></img>
-                            ))}
-                        </Box>
-                    )}
+                    <Box
+                    sx={{
+                        mb: { xs: 2, sm: 3, md: 4 },
+                        width: '100%',
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        justifyContent: 'space-evenly',
+                        alignItems: 'flex-start',
+                        gap: { xs: '2rem', sm: '3rem', md: '5rem' },
+                    }}
+                >
+                    {Array.isArray(project.imgUser) && project.imgMockup.map((imgUser, index) => (
+                        <img
+                            key={index}
+                            src={imgUser}
+                            alt={`imgUser-${index}`}
+                            style={{
+                                width: '25%', // Ajuste para ocupar el 100% del contenedor
+                                height: 'auto'
+                            }}
+                        />
+                    ))}
+                </Box>
                 </Box>
                 <Box
                     sx={{
                         mx: { xs: 5, sm: 10, md: 15 },
+                        my: { xs: 5, sm: 10, md: 15 },
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'flex-end',
@@ -261,12 +256,12 @@ const ProjectId = () => {
                                 fontWeight: '400',
                             }}
                         >
-                            {project?.titleresaerch}
+                            {project?.titleResearch}
                         </Typography>
                         <Typography
                             variant='p'
                             sx={{
-                                mb: { xs: 2, sm: 3, md: 4 },
+                                my: { xs: 5, sm: 10, md: 15 },
                                 fontWeight: '300',
                                 fontSize: { xs: '1em', md: '1.25em', xl: '1.5em' },
                                 textAlign: 'justify'
@@ -286,25 +281,37 @@ const ProjectId = () => {
                             {project?.insights}
                         </Typography>
                     </section>
-                    {Array.isArray(project.imgPrototipe) && (
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                flexWrap: 'wrap',
-                                justifyContent: 'space-between',
-                                alignItems: 'flex-start',
-                                // gap: { xs: '2rem', sm: '3rem', md: '1rem' },
-                            }}>
-                            {project.imgPrototipe.map((imgPrototipe, index) => (
-                                <img src={imgPrototipe} alt={index}></img>
-                            ))}
-                        </Box>
-                    )}
                 </Box>
                 <Box
                     sx={{
-                        mx: { xs: 5, sm: 10, md: 15 },
+                        mb: { xs: 2, sm: 3, md: 4 },
+                        width: '100%',
                         display: 'flex',
+                        flexWrap: 'wrap',
+                        justifyContent: 'space-evenly',
+                        alignItems: 'flex-start',
+                        gap: { xs: '2rem', sm: '3rem', md: '5rem' },
+                    }}
+                >
+                    {Array.isArray(project.imgMockup) && project.imgMockup.map((imgMockup, index) => (
+                        <img
+                            key={index}
+                            src={imgMockup}
+                            alt={`imgMockup-${index}`}
+                            style={{
+                                width: '25%', // Ajuste para ocupar el 100% del contenedor
+                                height: 'auto'
+                            }}
+                        />
+                    ))}
+                </Box>
+
+                <Box
+                    sx={{
+                        mx: { xs: 5, sm: 10, md: 15 },
+                        my: { xs: 5, sm: 10, md: 15 },
+                        display: 'flex',
+                        flexDirection: 'column',
                         justifyContent: 'space-between',
                         alignItems: 'flex-end',
                         gap: { md: '1rem', lg: '2rem' }
@@ -313,7 +320,7 @@ const ProjectId = () => {
                         <Typography
                             variant='p'
                             sx={{
-                                mb: { xs: 2, sm: 3, md: 4 },
+                                my: { xs: 5, sm: 10, md: 15 },
                                 fontWeight: '300',
                                 fontSize: { xs: '1em', md: '1.25em', xl: '1.5em' },
                                 textAlign: 'justify'
@@ -321,6 +328,36 @@ const ProjectId = () => {
                         >
                             {project?.validation}
                         </Typography>
+                    </section>
+                    <Box
+                        sx={{
+                            width: '100%',
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            justifyContent: 'space-evenly',
+                            alignItems: 'flex-start',
+                            gap: { xs: '2rem', sm: '3rem', md: '5rem' },
+                        }}>
+                        {Array.isArray(project.imgPrototipe) && (
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    flexWrap: 'wrap',
+                                    justifyContent: 'space-between',
+                                    alignItems: 'flex-start',
+                                    // gap: { xs: '2rem', sm: '3rem', md: '1rem' },
+                                }}>
+                                {project.imgPrototipe.map((imgPrototipe, index) => (
+                                    <img
+                                        src={imgPrototipe}
+                                        alt={index}
+                                        style={{
+                                            width: '25%', // Ajuste para ocupar el 100% del contenedor
+                                            height: 'auto'
+                                        }}></img>
+                                ))}
+                            </Box>
+                        )}
                         <Typography
                             variant='p'
                             sx={{
@@ -332,38 +369,57 @@ const ProjectId = () => {
                         >
                             {project?.insights}
                         </Typography>
-                    </section>
+                    </Box>
+                </Box>
+                <Box
+                    sx={{
+                        width: '100%',
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        justifyContent: 'space-evenly',
+                        alignItems: 'flex-start',
+                        gap: { xs: '0,5rem', sm: '1rem', md: '2rem' },
+                    }}>
                     {Array.isArray(project.imgDesign) && (
                         <Box
                             sx={{
                                 display: 'flex',
                                 flexWrap: 'wrap',
-                                justifyContent: 'space-between',
+                                justifyContent: 'space-evenly',
                                 alignItems: 'flex-start',
                                 // gap: { xs: '2rem', sm: '3rem', md: '1rem' },
                             }}>
-                            {project.imgDesign.map((imgDesing, index) => (
-                                <img src={imgDesing} alt={index}></img>
+                            {project.imgDesign.map((imgDesign, index) => (
+                                <img src={imgDesign} alt={index} style={{
+                                    width: '25%', // Ajuste para ocupar el 100% del contenedor
+                                    height: 'auto'
+                                }}></img>
                             ))}
-                        </Box>                        
+                        </Box>
                     )}
                 </Box>
                 <Box
                     sx={{
                         mx: { xs: 5, sm: 10, md: 15 },
+                        my: { xs: 5, sm: 10, md: 15 },
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'flex-end',
-                        gap: { md: '1rem', lg: '2rem' }
                     }}>
-                    <section>
+                    <section
+                        sx={{
+                            width: '100%',
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            justifyContent: 'space-evenly',
+                            alignItems: 'flex-start',
+                            gap: { xs: '0,5rem', sm: '1rem', md: '2rem' },
+                        }}>
                         <Typography
-                            variant='p'
+                            variant='h4'
                             sx={{
-                                mb: { xs: 2, sm: 3, md: 4 },
-                                fontWeight: '300',
-                                fontSize: { xs: '1em', md: '1.25em', xl: '1.5em' },
-                                textAlign: 'justify'
+                                mb: { xs: 3, sm: 5, md: 5 },
+                                fontWeight: '400',
                             }}
                         >
                             {project?.titleConclusion}
@@ -381,9 +437,13 @@ const ProjectId = () => {
                         </Typography>
                     </section>
                 </Box>
-                
+
             </Grid>
         </React.Fragment>
     )
 }
 export default ProjectId
+
+
+
+
