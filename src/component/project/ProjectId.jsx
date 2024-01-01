@@ -155,8 +155,8 @@ const ProjectId = () => {
                             alignItems: 'flex-start',
                             // gap: { xs: '2rem', sm: '3rem', md: '1rem' },
                         }}>
-                            {project.imgProject.map((imgProject, index) => (
-                            <img src={imgProject} alt={index}></img>
+                            {project.imgProject.map((imgMockup, index) => (
+                            <img src={imgMockup} alt={index}></img>
                             ))}
                         </Box>
                     )}

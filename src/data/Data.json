@@ -16,9 +16,17 @@
                 "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/sass-color.svg",
                 "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/js-color.svg"
             ],
-    "titleuser":"",
-    "user":"",
+    "titleuser":"Público objetivo",
+    "user":"Esta herramienta fue diseñada para usuarios que se motivan por el ejericio físico, pero con una agenda muy apretada, siempre buscan darse un tiempo para entrenar y mantenerse activos.",
+    "research":"Dentro de la investigación, las interacciones más destacas es que los usuarios no cuentan con horario fijo determinado para entrenar por lo que buscan un espacio dentro de su apretad agenda para ejercitarse a diario. Y, por otro lado, no cuentan con una guía flexible y dinámica que se adapte a sus tiempos y espacios. Ir al gimnasio les demanda tiempo, con el cual no siempre cuentan.",
+    "insights":"Esta herramienta fue diseñada para usuarios que se motivan por el ejericio físico, pero con una agenda muy apretada, siempre buscan darse un tiempo para entrenar y mantenerse activos.",
     "technologies": "Figma",
+    "imgMockup":
+        [ 
+            "",
+            "",
+            ""
+        ],
     "icon1": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/figma-color.svg",
     "Icon2": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/icons-tech-color/ilustrator-color.svg",
     "Icon3":
@@ -28,7 +36,13 @@
     "icon6": "",
     "linkRepo": "https://github.com/AleMCuitino/Duck-or-Goose",
     "linkDemo": "https://www.figma.com/proto/MfunCZCMsh3XX1uxWVTKlM/Fitness-App?type=design&node-id=207-3&t=GQ45P1dCGgLlW1s0-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=9%3A117&mode=design",
-    "imgProject":
+    "imgPrototipe":
+        [ 
+            "",
+            "",
+            ""
+        ],
+    "img":
         [ 
             "",
             "",
