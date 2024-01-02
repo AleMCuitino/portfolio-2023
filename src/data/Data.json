@@ -62,10 +62,10 @@
     "imgUrl": "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/main/src/assets/img-proj/fin-app.png",
     "imgAlt": "Imagen de marca de FinApp",
     "coverImg": "",
-    "subtitle": "FinApp es una plataforma digital que permite la planificación de entrenamiento físico según el tiempo e interés del usuario.",
-    "description":"El problema identificado es el poco tiempo para planificar y coordinar entrenamientos físicos en adultos laboralmente activos y una agenda apretada. Es por ello, que el objetivo de este proyecto fue diseñar una aplicación para FitApp que les permita a los usuarios planificar sus entrenamientos de forma fácil y flexible.",
+    "subtitle": "FinApp es una organización para el aprendizaje de finanzas personales. Por lo que requieren una herramienta que les permita acercar estos conocimiento a sus usuarios. ",
+    "description":"Alrededor del 50% de la población de adultos entre 20 y 29 años no cuenta con los conocimientos necesarios para tomar decisiones financieras en su vida. Lo que conlleva a no comprender conceptos mínimos sobre finanzas básicas para el día a día. Es por ello que el pbjetivo es diseñar una aplicación que promueva la educación financiera básica, para empoderar a los jóvenes en el manejo de sus finanzas.",
     "titleGoal":"Rol y responsabilidades",
-    "goals": "Mi rol fue de diseñadora de UX para la creación de la aplicación FitApp. En cuanto las responsabilidades, estas implicaron la realización de entrevistas, realización de wireframes en papel y digitales, creación de prototipos de baja y alta fidelidad, realización de estudios de facilidad de uso, accesibilidad e iteración de diseños.",
+    "goals": "Mi rol fue de diseñadora UX,  diseño de la aplicación y del sitio web adaptable desde la ideación hasta la iteración final. Ejecuté la realización de entrevistas, creación de esquemas de página digitales y en papel, creación de prototipos de baja y alta fidelidad, realización de estudios de facilidad de uso, aplicación de medidas de accesibilidad, iteración de diseños, delineación de la arquitectura de la información y diseño responsive",
     "tech":
             [
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png",
@@ -73,13 +73,12 @@
                 "https://upload.wikimedia.org/wikipedia/commons/7/78/Icons8_logo.jpg"
             ],
     "titleUser":"Público objetivo",
-    "user":"Esta herramienta fue diseñada para usuarios que se motivan por el ejericio físico, pero con una agenda muy apretada, siempre buscan darse un tiempo para entrenar y mantenerse activos.",
+    "user":"Sus principales usuarios son jóvenes que recién se integran al mundo laboral, los cuales comienzan a organizar el manejo del dinero en su día día",
     "imgUser":
         ["https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-user/finapp/user-a.png",
         "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-user/finapp/user-b.png"],
     "titleResearch":"Investigación",
-    "research":"Las interacciones más destacadas es que los usuarios no cuentan con horario fijo determinado para entrenar por lo que buscan un espacio dentro de su apretad agenda para ejercitarse a diario. Y, por otro lado, no cuentan con una guía flexible y dinámica que se adapte a sus tiempos y espacios. Ir al gimnasio les demanda tiempo, con el cual no siempre cuentan.",
-    "insights":"En el proceso de desarrollo del diseño se busco responder a las necesidades del usuario a través de la implementación de diferentes aspectos que les permitan facilitar las tareas al momento de entrenar.",
+    "research":"Investigando el contexto de educación financiera en jóvenes, nacen preguntas para la realización de las entrevistas  a los usuarios. Gran parte de los entrevistados considera que no ha se ha informado activamente sobre finanzas y, que en algunos casos, esto lo ha llevado a tomar malas decisions monetarias. Aún así, están abiertos a recibir información financiera que fuse fácil de entender y de manera amigable, porque lo que han leído o lo poco que han visto, se les hace difícil de comprender",
     "technologies": "Figma",
     "imgMockup":
         [ 
@@ -101,7 +100,7 @@
             "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-proto/finapp/esquema-b.png",
             "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-proto/finapp/esquema.png"
         ],
-    "validation":"Los hallazgos del primer estudio ayudaron a guiar los diseños para convertirlos de esquemas de página en maquetas. El segundo estudio utilizó un prototipo de alta fidelidad y se detectaron que algunas pantallas requieren redefinirse." ,
+    "validation":"Se desarrolló una iteración rápida sobre cómo abarcar la información financiera, para encontrar la manera más amigable para el usuario. Nos enfocamos en la llegada a la información con la opción de selección de objetivo como primera instancia.Luego de la iteración previa con esquemas en papel, se pasó a la etapa de diseño de esquemas digitales de FinApp. Esta estapa se centró en ofrecer un objetivo inicial para llamar a la acción a los usuarios y así ayudarlos a tener un objetivo claro y fácil. Se conectaron las diferentes pantallas de esquemas digitales para crear el prototipo de navegación. En el cual el flujo implicaba la creación de un objetivo financiero, para comenzar el aprendizaje. POr último, se diseñó la aplicación con puntos de quiebres adaptables a diferentes pantallas, de forma consistente y coherente de FinApp para mantener la experiencia de los usuarios en diferentes dispositivos.",
     "imgDesign":
         [ 
             "https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-design/finapp/design-a.png",
@@ -110,7 +109,7 @@
         ],
     "imgFlow":"https://raw.githubusercontent.com/AleMCuitino/portfolio-2023/develop/src/assets/img-flow/finapp/design.png",    
     "titleConclusion":"Conclusión",
-    "conclusion":"La app facilita a los usuarios que logren planificar sus entrenamientos sin el miedo de no poder entrenar, ya que al planificar sienten el control de su actividad física y su agenda. Importante destacar las iteraciones son clave al momento de idear y diseñar una app. El usuario será el que guíe el proceso de diseño, hay que enfocarse en cómo ellos utilizan y navegan por la aplicación. No siempre será como nosotros lo pensamos."    
+    "conclusion":"Los usuarios declararon sentirse muy acogidos con la herramienta FinApp, ya que consideraron que podría ser muy útil para la gestión de sus finanzas y alcanzar objetivos. De esta forma, el objetivo sea cercano y alcanzable para que realmente sea factible. Comprendí las necesidades de las personas de alcanzar objetivos, que sean pequeños pasos que apoyen sus decisiones, y cómo un producto digital diseñado, pensando en los usuarios, puede empedorearlos a lograr sus intereses."   
 },
 {
     "id": 3,
